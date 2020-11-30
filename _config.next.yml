@@ -567,7 +567,7 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: disqus | disqusjs | changyan | valine | livere | gitalk
-  active:
+  active: disqus
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
@@ -582,9 +582,9 @@ comments:
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
-  count: true
+  enable: ture
+  shortname: echo-of-rain
+  count: false
 
 # DisqusJS
 # Alternative Disqus - Render comment component using Disqus API.
