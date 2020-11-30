@@ -1,0 +1,19 @@
+name: Label Commenter
+
+on:
+  issues:
+    types:
+      - labeled
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: Label Commenter
+        # Exclude https://github.com/peaceiris/actions-label-commenter/pull/316
+        uses: peaceiris/actions-label-commenter@v1.7.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
