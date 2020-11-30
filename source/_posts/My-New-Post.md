@@ -207,8 +207,9 @@ Just like in PS4, it takes a screenshot whenever you unlock a trophy.
 - 图片占位符，延迟加载
 - 更新超过60天后，顶部alert提示`该文章内容可能已经过时`
 - 字体优化
-- 评论
+- 评论优化
 - 文字顶部注音、注释
-- 折叠框
+- 折叠框/折叠代码部分
 - 优化代码高亮
-- 侧边栏友情链接
+- 控制台个性输出
+- 更多的动画过渡
