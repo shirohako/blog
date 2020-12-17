@@ -1,8 +1,8 @@
 ---
 title: 「祭物与雪之刹那」中文流程白金攻略
 date: 2020-11-24 02:11:50
-tags: [Game]
-categories: [Kouryaku]
+tags: [Kouryaku]
+categories: [Game]
 ---
 
 ![00](https://img.xiami.net/images/common/uploadpic/46/16061621461218.jpg)
