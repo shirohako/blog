@@ -1,9 +1,9 @@
 .links-of-author {
-  a, span.exturl {
+  a {
     font-size: $font-size-smaller;
   }
 
-  if (!hexo-config('social_icons.icons_only')) {
+  if (not hexo-config('social_icons.icons_only')) {
     .fa, .fab, .far, .fas {
       margin-right: 2px;
     }
