@@ -7,12 +7,18 @@
 body
   cursor: url("/images/cursor.png"), auto !important;
 
-//链接样式
+//鼠标样式(链接)
 a, .back-to-top-cat, .fa-copy, button
   cursor: url('/images/cursor_link.png'), auto !important;
 
+//侧边栏站标
 .site-brand-container {
   background: $SHION;
+}
+
+//文章最大宽度
+.main {
+  max-width: 1380px;
 }
 
 //友情链接按钮
@@ -53,8 +59,11 @@ a, .back-to-top-cat, .fa-copy, button
   }
 }
 
+
 //侧边栏TOC
 .post-toc .nav {
+
+  padding: 0 10px;
 
   .nav-item:not(.active) {
     display: block;
@@ -77,16 +86,9 @@ a, .back-to-top-cat, .fa-copy, button
   }
 }
 
-.post-toc .nav {
-  padding: 0 10px;
-}
 
 .posts-collapse .post-content .post-header:hover {
   border-bottom-color: $SHION;
-}
-
-.main {
-  max-width: 1380px;
 }
 
 a.nav-link {
@@ -147,7 +149,7 @@ a.nav-link {
     }
   }
 
-  // for tag github-card
+  // 标签 Github-Card
 
   .github-card {
     display: flex;
@@ -155,60 +157,66 @@ a.nav-link {
     padding: 5px 25px;
     border-radius: 10px;
     margin: 0 0 20px 0;
-  }
 
-  .github-card-icon {
-    display: flex;
-    margin-right: 25px;
-  }
+    .github-card-icon {
+      display: flex;
+      margin-right: 25px;
+    }
 
-  .github-card-icon i {
-    font-size: 96px;
-    align-self: center;
-  }
+    .github-card-icon i {
+      font-size: 96px;
+      align-self: center;
+    }
 
-  .github-card-title {
-    font-weight: 600;
-    color: #f05f70;
-    font-size: 1.35rem;
-    margin: 5px 0 0 0;
-  }
+    .github-card-title {
+      font-weight: 600;
+      color: #f05f70;
+      font-size: 1.15em;
+      margin: 5px 0 0 0;
+    }
 
-  .github-card-button {
-    margin-bottom: 10px;
-    color: #fff;
+    .github-card-desc{
+      text-align :initial;
+    }
 
-    button {
+    .github-card-button {
+      margin-bottom: 10px;
       color: #fff;
-      cursor: pointer;
-      border none;
-      border-radius: 5px;
-    }
 
-    a:nth-child(1) > button {
-      background-color: $SHION;
-      margin-right: 5px;
-    }
+      button {
+        color: #fff;
+        cursor: pointer;
+        border none;
+        border-radius: 5px;
+      }
 
-    a:nth-child(2) > button {
-      background-color: #e27784;
-      color: #fff;
-    }
+      a:nth-child(1) > button {
+        background-color: $SHION;
+        margin-right: 5px;
+      }
 
-    a, a:hover, a:active, a:visited {
-      color: #fff;
-      background: none;
-      border: none;
-    }
+      a:nth-child(2) > button {
+        background-color: #e27784;
+        color: #fff;
+      }
 
-    button:focus, button:active:focus {
-      color: #fff;
-      outline: none;
-    }
+      a, a:hover, a:active, a:visited {
+        color: #fff;
+        background: none;
+        border: none;
+      }
+
+      button:focus, button:active:focus {
+        color: #fff;
+        outline: none;
+      }
+  }
+
+
 
   }
 
-  // for block quote
+  // 引用
 
   blockquote {
     border: 0;
@@ -225,7 +233,7 @@ a.nav-link {
     }
   }
 
-  // for list
+  //列表
 
   ol, ul {
     list-style: none;
@@ -271,7 +279,7 @@ a.nav-link {
     font-size: 0.85em;
   }
 
-  // for title
+  // 标题
 
   h2:before {
     top: -4px;
@@ -309,7 +317,7 @@ a.nav-link {
   //底部版权
 
   .post-copyright {
-    height: 170px;
+    font-size: 0.875em;
     border-radius: 3px;
     background-color: rgba(rgb($SHION), 0.1);
     padding 15px 0 15px 15px;
@@ -317,13 +325,21 @@ a.nav-link {
 
     .post-copyright-bg {
       height: 100%;
-      padding-left: 150px;
+      padding-left :165px;
       background-image: url("/images/priest.png");
       background-size: contain;
       background-repeat no-repeat;
       display flex;
       flex-flow: column;
       justify-content: center;
+
+      @media (min-width :300px){
+        min-height 165px;
+      }
+
+      span{
+        word-break keep-all;
+      }
     }
 
     .license-name {
@@ -347,7 +363,7 @@ a.nav-link {
     }
   }
 
-  .center *{
+  .center * {
     text-align: center;
   }
 }
@@ -373,8 +389,7 @@ a.nav-link {
 }
 
 
-//容器圆滑
-
+//容器边缘圆滑
 .sidebar-inner, .header-inner, .site-brand-container,
 .main-inner > div.post-block, .comments {
   border-radius: 5px;
@@ -423,6 +438,10 @@ a.nav-link {
 
     @media (min-height: 1100px) {
       top: 0;
+    }
+
+     @media (max-width: 1024px) {
+      display: none;
     }
   }
 }
