@@ -204,7 +204,7 @@ categories: [Unboxing]
 找一台局域网里的`Windows设备`，打开`Windows 资源管理器`，访问 `\\192.168.50.111` (要替换成你NAS的IP)
 会要求你输入用户名和密码，成功后就可以像本地硬盘一样操作了~
 
-![](https://img1.abyss.moe/2021/01/17/0e6e80c517e9f.jpg)
+![](https://img1.abyss.moe/2021/01/17/5a0f39570a73d.jpg)
 
 在`File Station`可以新建一个共享文件夹
 并可以定制访问权限，和其他的一些高级设置
