@@ -879,7 +879,7 @@ OP结束后，自动来到了「王都」
 
 「冰冷月洞」(冷たい月の洞のマップ)
 
-![106](https://img.xiami.net/images/common/uploadpic/47/16074383474905.jpg)
+![106](https://ae01.alicdn.com/kf/U52947ed9fd5f40c69583827b48a9a3d98.jpg)
 
 #### 探索手册
 
