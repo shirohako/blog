@@ -13,7 +13,7 @@ categories: [Unboxing]
 
 这次开箱的是[TS-453D](https://www.qnap.com.cn/zh-cn/product/ts-453d)，一台QNAP(威联通)的`NAS`
 目前京东售价`5000`元左右，亚马逊中国大概`4000`元左右(含税和运费)
-最便宜应该是去年ADORAMA的`$400`价格，转运回来大概大约3000元左右
+最便宜应该是去年`Adorama`的`$400`价格，转运回来大概大约3000元左右
 当然我也没赶上那次促销，于是咸鱼上收了一台美版
 
 ![](https://img1.abyss.moe/2021/01/16/304e93e06fb6e.jpg)
@@ -27,7 +27,7 @@ categories: [Unboxing]
 
 包装包含了2根网线、螺丝、电源适配器、纸质说明书
 
-![](https://img1.abyss.moe/2021/01/16/963409e7a5131.jpg)
+![](https://ae01.alicdn.com/kf/U48711706f29a4a76a54d1e0bda0f7b0dg.jpg)
 
 
 需要注意的，电源线是Type-B，适用于美/日/台等地区
@@ -41,7 +41,7 @@ categories: [Unboxing]
 
 电源开关在机器正面，接上电源后按一下就能开机了
 
-![](https://img1.abyss.moe/2021/01/16/38160cc2b77f4.jpg)
+![](https://ae01.alicdn.com/kf/Ucdeb723067d94e9c9fc06a2b9db8d665i.jpg)
 
 ## 安装系统和硬盘
 
@@ -56,7 +56,7 @@ categories: [Unboxing]
 这次我准备了4块日立3T硬盘
 从淘宝入手，全部都是翻新盘，所以很便宜，单块价格在200元左右
 
-![](https://img1.abyss.moe/2021/01/17/13affab149161.jpg)
+![](https://ae01.alicdn.com/kf/U1537ee2b5e2e4f27a1a9ea50c2b740d4P.jpg)
 
 安装说明书
 
@@ -75,7 +75,7 @@ categories: [Unboxing]
 
 接着把支架下面的螺丝拧好就行
 
-![](https://img1.abyss.moe/2021/01/17/e2669ed1bd2bb.jpg)
+![](https://ae01.alicdn.com/kf/Uc0e7c997e62c46ca978a60e1d5d753b7C.jpg)
 
 
 这是机器内部的硬盘背板
