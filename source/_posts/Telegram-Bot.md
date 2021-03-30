@@ -146,8 +146,8 @@ systemctl start tg-bot
 A bot running on Telegram which will send CAPTCHA to verify if the new member is a human.
 {% endgithub %}
 
-![](https://i.loli.net/2020/10/20/NRSd87AzjVnsm1G.jpg)
-![](https://i.loli.net/2020/10/20/tWkuzK4cAyJpRbo.jpg)
+![](https://ae01.alicdn.com/kf/Ucc06ccff250547c2a676be3ccb2babb8T.jpg)
+![](https://ae01.alicdn.com/kf/Ue1aef38db7f44c02aa374dd3f439e4d5V.jpg)
 
 
 ### fengdoorbot
@@ -156,4 +156,4 @@ A bot running on Telegram which will send CAPTCHA to verify if the new member is
 A bot running on Telegram which will send CAPTCHA to verify if the new member is a human.
 {% endgithub %}
 
-![](https://i.loli.net/2020/10/20/glSIp6L3MkbXKPj.jpg)
+![](https://ae01.alicdn.com/kf/Ubd725428a88a4d18b665736da0db7175P.jpg)
