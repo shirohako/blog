@@ -7,8 +7,8 @@ description: 一个强迫症的音频抓取软件设置指北
 
 ## 前言
 
-2021年了，Hi-Res配信都早已流行起来。CD作为音乐载体早就不具有优势
-但是收藏价值还是有的，当然每次想听的时候把放入光驱也是挺麻烦的
+2021年了，Hi-Res配信都早已流行起来。CD作为音乐载体、早已不再有优势
+但是收藏价值还是有的，当然每次想听的时候、需要放入光驱也是挺麻烦的
 这里介绍一下将实体CD转换到`Lossless`数字档案的方案
 
 
@@ -113,8 +113,8 @@ EAC提供了`简体中文`，你可以到设置里切换，方便你对软件更
 **缓存音频数据**
 >EAC会多次读取每个扇区，结果一致才会读下一个
 >如果光驱有缓存的话、读取缓存会造成结果一定相同
->所以必须勾上这个，勾上后表现为禁用缓存
->即使光驱不支持缓存，勾上理应不会产生问题
+>所以必须勾上这个，勾上后表现为禁用缓存 (Defeat audio cache)
+>即使光驱不支持缓存，禁用缓存理应不会产生问题
 
 
 ![](https://ae01.alicdn.com/kf/U07e84c9418e1454a8aecbca192df92a0F.jpg)
@@ -226,7 +226,7 @@ Ctrl+F 搜索你的光驱型号机型，比如我的`hp BD CMB UJ160`是+103
 当然也可以在EAC一步搞定
 在这之前、需要先设置一下`EAC压缩选项`
 
-***压缩选项 -> 外部压缩程序***
+**压缩选项 -> 外部压缩程序**
 
 在附加的命令行选项填入内容
 
@@ -237,13 +237,13 @@ Ctrl+F 搜索你的光驱型号机型，比如我的`hp BD CMB UJ160`是+103
 
 这里给出几个举例
 
-***整轨用***
+**整轨用**
 
 ```
 -8 -V -T "ALBUM=%albumtitle%" -T "DATE=%year%" -T "TRACKNUMBER=%tracknr%" -T "GENRE=%genre%" -T "PERFORMER=%albuminterpret%" -T "COMPOSER=%composer%" %haslyrics%--tag-from-file=LYRICS="%lyricsfile%"%haslyrics% -T "ALBUMARTIST=%albumartist%" -T "DISCNUMBER=%cdnumber%" -T "TOTALDISCS=%totalcds%" -T "TOTALTRACKS=%numtracks%" -T "COMMENT=%comment%" %hascover%--picture=||||"%coverfile%"%hascover% --cuesheet="%artist% - %albumtitle%.cue" %source% -o %dest%
 ```
 
-***多音轨用***
+**多音轨用**
 
 ```
 -8 -V -T "ARTIST=%artist%" -T "TITLE=%title%" -T "ALBUM=%albumtitle%" -T "DATE=%year%" -T "TRACKNUMBER=%tracknr%" -T "GENRE=%genre%" -T "PERFORMER=%albuminterpret%" -T "COMPOSER=%composer%" %haslyrics%--tag-from-file=LYRICS="%lyricsfile%"%haslyrics% -T "ALBUMARTIST=%albumartist%" -T "DISCNUMBER=%cdnumber%" -T "TOTALDISCS=%totalcds%" -T "TOTALTRACKS=%numtracks%" -T "COMMENT=%comment%" -T "DISCID=%cddbid%" %hascover%--picture=||||"%coverfile%"%hascover% %source% -o %dest%
@@ -259,7 +259,7 @@ Ctrl+F 搜索你的光驱型号机型，比如我的`hp BD CMB UJ160`是+103
 
 ![](https://ae01.alicdn.com/kf/U621b3a3b1f9f44249d6308686e600ce23.jpg)
 
-### 一份较好log示范与校验
+### 一份较好 EAC log 示范
 
 抓轨log自动保存，请不要改动删除它
 它是你正确使用EAC的最好证据
@@ -360,7 +360,7 @@ Track | CTDB Status
 ==== Log checksum C9294F4F0FBEB55D2A34159AC6C2EC5832937D1CB717F83CAC1B25BAF1F0D5A1 ====
 ```
 
-### 校验log
+### 校验 EAC Log
 
 EAC提供的校验程式在安装目录下，要想校验log必须用到它
 
@@ -379,20 +379,20 @@ EAC提供的校验程式在安装目录下，要想校验log必须用到它
 
 ### 将LOG检验程式关联到上下文菜单
 
-### 检测音频文件CRC
-
 校验每次要打开终端比较麻烦，这里介绍一个技巧，可以直接关联到上下文菜单
 
 **效果如下**
 
 ![](https://ae01.alicdn.com/kf/U80c6f6e152ae47ab9d00f45cd88df20eQ.jpg)
 
+会直接弹出校验结果
+
 ![](https://ae01.alicdn.com/kf/Ucfc7286613584c1fbb93506a93b35cc2r.jpg)
 
 
 **实现方法**
 
-直接改注册表比较麻烦，这里推荐一个GUI工具
+直接改注册表比较麻烦，这里推荐一个开源的GUI工具
 >BluePointLilac / ContextMenuManager
 >https://github.com/BluePointLilac/ContextMenuManager
 
@@ -440,24 +440,24 @@ EAC提供的校验程式在安装目录下，要想校验log必须用到它
 启动XLD，按【`⌘ ,`】（Command + ,）
 打开设置页面
 
-**通用**
+**XLD预置 -> 通用**
 
-导出格式可选音频编码/封装格式，建议选择`FLAC`
-`Cuesheet 的字符编码`请选择：`Unicode (UTF-8)`
-`存储 Cue Sheet 时前置BOM` 请勾上
+`导出格式可选音频编码/封装格式`：建议选择 `FLAC`
+`Cuesheet 的字符编码`：请选择 `Unicode (UTF-8)`
+`存储 Cue Sheet 时前置BOM`：请勾上
 
 ![](https://ae01.alicdn.com/kf/U0c4ec2e05cc84e7b9d4ca557c1170ccen.jpg)
 
-**抓取 CD**
+**XLD预置 -> 抓取 CD**
 
 Ripper Mode (抓取模式)：`XLD Secure Ripper`
 
 读取样本偏离修正值如果是0的话，请对照 [AccurateRip 数据库](http://www.accuraterip.com/driveoffsets.htm) 设置一下
 这边勾选了自动设置，XLD已经帮我设置好了(103)
-每个光驱都不同欧诺个，你的不一定是103！
+每个光驱的偏移值**都不同**，你的不一定是103！
 
-`Save Log File`: 总是
-`Save Cue Sheet`: 仅单一文件时
+`Save Log File`：总是
+`Save Cue Sheet`：仅单一文件时
 
 `验证可疑选区`：请打勾
 
@@ -492,12 +492,12 @@ Library (资源库) 显示方法：
 ![](https://ae01.alicdn.com/kf/U7956dcd45614497fa7515990a84e92c2W.jpg)
 
 左上角可以选择`单一文件`(整轨)或分轨导出
-我个人推荐`单一文件+cue`，如需分轨之后单独切割也很方便
+我个人推荐`单一的flac+cue`，如需分轨之后单独切割也很方便
 
 ![](https://ae01.alicdn.com/kf/Ub271ef50845543c1bb4a89f7cf684aa5x.jpg)
 
 点击 Extract 就可以开始抓取了
-完成后会弹出抓取日志，如果开了自动保存就不用另存为了
+完成后会弹出抓取日志，如果开了自动保存、就不用另存为了
 如果你正确安装log插件，日志结尾还有校验码
 
 ![](https://ae01.alicdn.com/kf/Ud97b9ef48ebb433b88131e77b5056e700.jpg)
@@ -516,7 +516,7 @@ Library (资源库) 显示方法：
 
 ![](https://ae01.alicdn.com/kf/U6c8d0e7a48c64394bb352e7714637b73H.jpg)
 
-**示例log**
+**示例 XLD Log**
 
 ```text
 X Lossless Decoder version 20210101 (153.1)
@@ -673,3 +673,38 @@ Q8VOo.s2P7HP1vzBiQ4MhBXDD_8fgpQNDJsLalN_pS8dXJ8Zj2yVgJdAVXck21Py.zDkFzAbkws3vUwd
 -----END XLD SIGNATURE-----
 
 ```
+
+## 检测音频文件CRC32
+
+一个音频文件包含了头部标签（标题、封面、作曲家信息等）
+`要正确计算`你需要把`wav/flac`头部`头部标签`去掉，只计算`音频部分`
+所以你怎么改动专辑标题、艺术家信息，`音频部分` CRC32是不会变的
+
+所以还是比较麻烦的，也有人写过专门计算的工具，比如`wavcrc32`
+不过已经非常老了，我也不再推荐
+
+![](https://ae01.alicdn.com/kf/Uab88918b38c94968b577bd652b85ba24j.jpg)
+
+
+个人推荐还是利用foobar2000的`File Integrity Verifier`组件
+无论是单轨还是整轨、各种封装格式都支持
+
+组件可以在`foorbar2000`官网获取
+
+![](https://ae01.alicdn.com/kf/U97f76d7caf114bb19593b4ef2487c77bt.jpg)
+
+`Ctrl + F` 搜索
+
+![](https://ae01.alicdn.com/kf/U3f534d6defaf459ba1d5802b33d7345df.jpg)
+
+下载后可以获得`Verifier.fb2k-component`，在`foorbar2000`内安装即可
+
+![](https://ae01.alicdn.com/kf/Uc719f4304e3340c3b2d37078b574e303e.jpg)
+
+重启后即可生效
+
+![](https://ae01.alicdn.com/kf/U3c8652940cee4dff9821e4e7851ea1efv.jpg)
+
+如果音频部分没有改动 (比如有损转码)，那校验出的结果是一致的
+
+![](https://ae01.alicdn.com/kf/U58dffe4fad3d4d48947dc08a4732f2f9J.jpg)
