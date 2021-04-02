@@ -1,4 +1,6 @@
-{{ open_graph() }}
+{%- set image = theme.ogp.image %}
+{{ open_graph({image:image}) }}
+
 
 {# https://github.com/theme-next/hexo-theme-next/issues/866 #}
 {%- set canonical = url | replace(r/index\.html$/, '') %}

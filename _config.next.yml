@@ -946,3 +946,6 @@ vendors:
 css: css
 js: js
 images: images
+
+ogp:
+  image: https://abyss.moe/avatar.jpg
