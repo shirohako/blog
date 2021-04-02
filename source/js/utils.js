@@ -161,7 +161,7 @@ NexT.utils = {
           backToTop.querySelector('span').innerText = Math.round(scrollPercent) + '%';
         }
         if (readingProgressBar) {
-          readingProgressBar.style.width = scrollPercent.toFixed(2) + '%';
+          readingProgressBar.style.setProperty('--progress', scrollPercent.toFixed(2) + '%');
         }
       }
       if (!Array.isArray(NexT.utils.sections)) return;
@@ -288,17 +288,6 @@ NexT.utils = {
       easing   : 'linear',
       scrollTop: tocElement.scrollTop - (tocElement.offsetHeight / 2) + target.getBoundingClientRect().top - tocElement.getBoundingClientRect().top
     });
-  },
-
-  getComputedStyle: function(element) {
-    const clone = element.cloneNode(true);
-    clone.style.position = 'absolute';
-    clone.style.visibility = 'hidden';
-    clone.style.display = 'block';
-    element.parentNode.appendChild(clone);
-    const height = clone.clientHeight;
-    element.parentNode.removeChild(clone);
-    return height;
   },
 
   /**
