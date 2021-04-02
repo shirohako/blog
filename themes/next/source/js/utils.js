@@ -166,7 +166,7 @@ NexT.utils = {
           backToTopCat.classList.toggle('back-to-top-cat-on', Math.round(scrollPercent) >= 5);
         }
         if (readingProgressBar) {
-          readingProgressBar.style.width = scrollPercent.toFixed(2) + '%';
+          readingProgressBar.style.setProperty('--progress', scrollPercent.toFixed(2) + '%');
         }
       }
       if (!Array.isArray(NexT.utils.sections)) return;
