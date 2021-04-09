@@ -947,5 +947,5 @@ css: css
 js: js
 images: images
 
-ogp:
-  image: https://abyss.moe/avatar.jpg
+open_graph_protocol:
+  image: https://cdn.jsdelivr.net/gh/shirohako/helm@latest/avatar.jpg
