@@ -574,15 +574,15 @@ comments:
   lazyload: true
   # Modify texts or order for any navs, here are some examples.
   nav:
-    #disqus:
-    #  text: Load Disqus
-    #  order: -1
+    disqus:
+      text: Load Disqus
+      order: -1
     #gitalk:
     #  order: -2
 
 # Disqus
 disqus:
-  enable: ture
+  enable: true
   shortname: echo-of-rain
   count: false
 
