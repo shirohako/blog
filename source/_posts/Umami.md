@@ -3,6 +3,7 @@ title: 使用 Umami 自建 Web Analytics 平台
 date: 2021-04-09 09:03:16
 tags: [web]
 categories: [Memo]
+description: 自建 Web Analytics 工具的记录
 ---
 
 Umami 是一个简单的网站统计工具，可以代替 Google Analytics
