@@ -8,3 +8,4 @@ public/
 .idea/
 .env
 _local.yml
+_multiconfig.yml
