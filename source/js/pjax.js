@@ -3,20 +3,19 @@
 const pjax = new Pjax({
   selectors: [
     'head title',
-    'head meta[name^="hexo-config-"]',
+    'script[type="application/json"]',
     '.main-inner',
     '.post-toc-wrap',
     '.languages',
     '.pjax'
   ],
-  analytics        : false,
-  cacheBust        : false,
-  scrollRestoration: false,
-  scrollTo         : !CONFIG.bookmark.enable
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
 });
 
 document.addEventListener('pjax:success', () => {
-  pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+  pjax.executeScripts(document.querySelectorAll('script[data-pjax]'));
   NexT.boot.refresh();
   // Define Motion Sequence & Bootstrap Motion.
   if (CONFIG.motion.enable) {
