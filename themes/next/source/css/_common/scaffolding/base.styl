@@ -15,7 +15,19 @@ body {
   line-height: $line-height-base;
   min-height: 100%;
   position: relative;
-  transition: all $transition-ease;
+  transition: padding $transition-ease;
+
+  if (hexo-config('body_scrollbar.overlay')) {
+    overflow-x: hidden;
+    @supports (overflow-x: clip) {
+      overflow-x: clip;
+    }
+    width: 100vw;
+  }
+
+  if (hexo-config('body_scrollbar.stable')) {
+    overflow-y: scroll;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
