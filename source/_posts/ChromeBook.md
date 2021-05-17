@@ -2,14 +2,13 @@
 title: 在 Chromebook 上安装 Windows 10
 date: 2021-05-17 03:27:43
 categories: [Memo]
-description: 一个强迫症的音频抓取软件设置指北
 ---
 
 
 ## 前言
 
-最近也是受群友~~传教~~影响，对 Arch Linux 产生了一点兴趣
-正好也一直想收一台笔电、做应急备用机，整理下我的需求：
+最近也是受群友影响~~(传教)~~，对 Arch Linux 产生了一点兴趣
+正好一直想收一台笔电、做应急备用机。整理下我的需求：
 
 - 一块较好屏幕，1080P 以上，高色域
 - 1000元以下，价格尽可能的低
@@ -39,7 +38,7 @@ description: 一个强迫症的音频抓取软件设置指北
 |  Weight  |  1.469639 kg  |
 
 当然还有高配的版本，不过价格也上去了。这个配置姑且满足了
-屏幕素质还是挺满意的，CPU 性能放到今天来用、还是差了点意思
+实际用起来，屏幕素质还是挺满意的。CPU 性能放到今天来用、还是差了点意思
 实拍图
 
 ![](https://ae01.alicdn.com/kf/H359943483b904851a2c28c9b86b2a28bj.jpg)
@@ -47,7 +46,7 @@ description: 一个强迫症的音频抓取软件设置指北
 
 至于为什么本文是写的安装 Windows 呢
 Chromebook不能直接安装其他系统的，需要刷机。而且 Arch 安装还是相对麻烦的
-这边写介绍下如何刷机和制作U盘镜像
+这边写记录下如何刷机和制作U盘镜像
 至于 Arch 的安装细节，我会单独写篇文章
 
 ## 为 ChromeBook 安装 UEFI firmware
@@ -164,9 +163,5 @@ bcdedit -set testsigning on
 点击 Download Link 下载，双击运行即可安装驱动
 
 ![](https://ae01.alicdn.com/kf/Hd4e176ddc9e94851979360eb0d8277dc7.png)
-
-具体键盘映射如下
-
-![](https://ae01.alicdn.com/kf/Hddb358e4f4f94949b964f4dd48c890d6N.jpg)
 
 重启一下~ 应该就好了
