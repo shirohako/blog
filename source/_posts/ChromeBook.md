@@ -10,20 +10,27 @@ categories: [Memo]
 最近也是受群友影响~~(传教)~~，对 Arch Linux 产生了一点兴趣
 正好一直想收一台笔电、做应急备用机。整理下我的需求：
 
-- 一块较好屏幕，1080P 以上，高色域
+- 一块较好屏幕：1080P 以上、高色域
 - 1000元以下，价格尽可能的低
-- 机器重量低，不能像块砖头一样
+- 机器重量低
 - CPU 性能至少能用就行。用于远程桌面，ssh连接等手机上不方便的操作
 
 也是正好看到了李先生的文章：["如何用 1000 元搞一个不错的 Linux 笔记本"](https://plumz.me/archives/12598/)
+
 因为自带的是ChromeOS，而且 Google 被墙了。所以这产品在国内几乎没人知道
 查了下国外有大佬做了 Custom UEFI firmware，所以刷个 Windows 或 Linux 都是没问题的
 最后决定入手一台 Chromebook 来折腾 Arch Linux
 
 
 最终选择的型号还是：Dell Chromebook 13 7310
-颜值和屏幕都不错，缺点的话没有USB3接口，自带的SSD太小，触控版手感一般，充电需要单独的DC供电
-不过价格不错，问了几个卖家都在550元左右包邮
+
+![](https://ae01.alicdn.com/kf/H06c955013add4a8795b238eca4980e55t.jpg)
+
+颜值和屏幕都不错，续航也可以
+缺点的话没有USB3接口，自带的SSD太小，触控版手感一般，充电需要单独的DC电源适配器供电
+不过价格不错，咸鱼上问了几个卖家，550元左右可以包邮收到
+另外我又在淘宝上收了一块2242 SATA协议的 128G SSD，大概100元左右
+
 具体参数：
 
 |  Name  |  Results  |
@@ -43,10 +50,7 @@ categories: [Memo]
 
 ![](https://ae01.alicdn.com/kf/H359943483b904851a2c28c9b86b2a28bj.jpg)
 
-
-至于为什么本文是写的安装 Windows 呢
-Chromebook不能直接安装其他系统的，需要刷机。而且 Arch 安装还是相对麻烦的
-这边写记录下如何刷机和制作U盘镜像
+这篇文章主要记录下 Chromebook 如何刷机
 至于 Arch 的安装细节，我会单独写篇文章
 
 ## 为 ChromeBook 安装 UEFI firmware
@@ -65,13 +69,13 @@ Chromebook不能直接安装其他系统的，需要刷机。而且 Arch 安装�
 
 ### 启用开发者模式
 
-需要 Enable Developer Mode，开机时按住 Esc + Refresh + Power 
+首先要`Enable Developer Mode`才能进入`Shell`，开机时按住 Esc + Refresh + Power 
 键盘上没有刷新按钮的话，按住 Esc + F3 + Power
-过几秒后会进入系统后，会提示： Chrome OS is missing or damaged
+过几秒后会进入系统后，会提示：`Chrome OS is missing or damaged`
 
 ![](https://ae01.alicdn.com/kf/Ha8c2a0485a0c462ea7598e9456eb2ff3J.jpg)
 
-按 Crtl + D , 然后按 Enter 以 turn OS verification OFF
+按 Ctrl + D , 然后按 Enter 以 turn OS verification OFF
 
 ![](https://ae01.alicdn.com/kf/H23e1ee08eaee448d8e3cefbfecdf086eM.jpg)
 
@@ -92,17 +96,20 @@ shell
 ### 进入终端
 
 下载 MrChromebox.tech 的刷机脚本
-
+需要连接到`Github`，大陆网络可能会无法直接连接
 
 ```shell
-##如果你没有科学上网的话，可以使用这个链接代替
-##https://storage.abyss.moe/github/MrChromebox/scripts/firmware-util.sh
+## 如果你没有科学上网的话，可以使用这个链接代替
+## https://storage.abyss.moe/github/MrChromebox/scripts/firmware-util.sh
+
+## curl 使用代理
+## export http_proxy=http://ip:port
+## export https_proxy=http://ip:port
 
 cd ~
 curl -L -O http://mrchromebox.tech/firmware-util.sh
 sudo bash firmware-util.sh
 ```
-
 
 ![](https://i.abyss.moe/images/1c5e5fcaf87b9742014d3f2a121c382c.png)
 
@@ -129,10 +136,14 @@ sudo bash firmware-util.sh
 
 https://github.com/ventoy/Ventoy/releases
 
+{% github ventoy/Ventoy %}
+Ventoy is an open source tool to create bootable USB drive for ISO/WIM/IMG/VHD(x)/EFI files.
+{% endgithub %}
+
 插入U盘制作就可以了，之后把ISO直接复制到U盘内就行了，很简单
 
 重启插上U盘，开机时候按ESC可以进入到 Boot Manager
-如果进入了 UEFI Shell内，`exit`退出
+如果进入了 UEFI Shell 内，`exit`退出
 
 Boot Menu 可以直接选择从哪个设备启动
 Boot Manager 可以更换启动顺序，shift + = 移动，Enter 保存
@@ -143,10 +154,10 @@ Boot Manager 可以更换启动顺序，shift + = 移动，Enter 保存
 
 ## 安装 Windows 和 触摸板驱动
 
-改好启动项后应该可以正常进入 Ventoy 了
+从 Boot Menu 选择你的USB设备进入 Ventoy
 Windows 安装都是有UI操作的很简单，这里就不再提了
 完成后，触控板应该是不能用的
-另外ChromeOS的键盘布局也不太方便，比如`DEL`。我们要映射下一些按键
+另外 ChromeOS 的键盘布局也不太方便，比如`DEL`。我们要映射下一些按键
 
 打开 cmd (管理员) 或 PowerShell (管理员)，打开`系统测试模式`
 
