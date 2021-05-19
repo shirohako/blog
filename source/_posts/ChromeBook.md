@@ -2,6 +2,7 @@
 title: 在 Chromebook 上安装 Windows 10
 date: 2021-05-17 03:27:43
 categories: [Memo]
+description: Chromebook的折腾记录
 ---
 
 

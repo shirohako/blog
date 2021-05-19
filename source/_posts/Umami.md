@@ -6,6 +6,9 @@ categories: [Memo]
 description: 自建 Web Analytics 工具的记录
 ---
 
+
+## 介绍
+
 Umami 是一个简单的网站统计工具，可以代替 Google Analytics
 使用nodejs编写，需要配合 MySQL 或 Postgresql
 使用起来很简单，比起 Google Analytics 比较直观，对SPA单页应用也支持不错
@@ -13,6 +16,15 @@ Umami 是一个简单的网站统计工具，可以代替 Google Analytics
 {% github /mikecao/umami,https://app.umami.is/share/8rmHaheU/umami.is  %}
 Umami is a simple, fast, website analytics alternative to Google Analytics.
 {% endgithub %}
+
+
+### 已经搭好的实例站点
+
+{% btn https://akari.abyss.moe/share/f3LFt4Aj/Blog, My Blog Report, fas fa-home fa-fw %}
+
+{% btn https://akari.abyss.moe/share/TfpYy4OU/Atelier, Atelier Report, fas fa-book fa-fw %}
+
+### 预览图
 
 ![](https://ae01.alicdn.com/kf/U5040576c840f408fa33e057ddbf6b640L.jpg)
 
@@ -197,9 +209,6 @@ server
 设置里可以打开`share URL`，任何人都可以看到这个报告
 
 ![](https://ae01.alicdn.com/kf/U9f0987f77ba34164806a5e282774da7fw.jpg)
-
-{% btn https://akari.abyss.moe/share/f3LFt4Aj/Blog, My Blog Report, fas fa-home fa-fw fa-lg %}
-
 
 ## 使用 Systemd 运行
 
