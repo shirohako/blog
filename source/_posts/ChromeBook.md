@@ -166,6 +166,8 @@ Windows 安装都是有UI操作的很简单，这里就不再提了
 bcdedit -set testsigning on
 ```
 
+![](https://ae01.alicdn.com/kf/H4589a6342a524488b0b7748c855a7fa5d.png)
+
 设置好网络后用浏览器打开 https://coolstar.org/chromebook/
 选择 INSTALL 后，接着选择具体的CPU和型号
 
