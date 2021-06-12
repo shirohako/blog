@@ -264,7 +264,8 @@ Section "Device"
    Option      "TearFree"     "true"
    Option      "DRI"          "false"
    Option      "NoAccel" "True"
-   Option      "AccelMethod" "sna"
+   Option      "AccelMethod" "uxa"
+   Option      "SwapbuffersWait" "false"
 EndSection
 ```
 
