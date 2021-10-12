@@ -19,7 +19,9 @@ categories:
     label: '🛠 Improvement'
 
   - title: '🌀 External Changes'
-    label: '🔌 3rd Party Plugin'
+    labels:
+      - '📦 Dependencies'
+      - 'Actions'
 
   - title: '📖 Documentation'
     label: '📖 Docs'
