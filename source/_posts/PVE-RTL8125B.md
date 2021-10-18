@@ -83,7 +83,7 @@ pve-kernel-5.11.22-4-pve/stable 5.11.22-9 amd64 [upgradable from: 5.11.22-8]
 root@shirobako:~# apt install pve-headers-5.11.22-4-pve
 ```
 
-编译安装
+编译安装网卡驱动
 ```bash
 ### 把下载好的驱动解压
 tar vjxf r8125*
@@ -93,7 +93,7 @@ chmod a+x autorun.sh
 ./autorun.sh
 ```
 
-## Compile driver and Test
+## Do Some Tests
 
 测试一下网卡驱动是否成功,`lsmod | grep r8125`有返回就表示驱动打上了
 看下网卡状态
@@ -139,7 +139,7 @@ Settings for enp42s0:
         Link detected: yes
 ```
 
-可以用iperf3和另一台主机试一下
+可以用`iperf3`和另一台主机试一下
 
 ```
 root@shirobako: iperf3 -c 192.168.50.111
