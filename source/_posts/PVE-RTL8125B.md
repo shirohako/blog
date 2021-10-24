@@ -15,7 +15,7 @@ tags:
 
 `B550M`这块主板自带了`2.5G LAN`口,正好配合我的交换机和NAS使用
 宿主机器系统换成了`PVE`,Linux kernels 5.4+的已自带`R8169`驱动,支持`Realtek 8169/8168/8101/8125`
-这里记录下之前装驱动的折腾过程
+这里记录下之前装驱动的瞎折腾过程
 
 ## Get Ethernet Driver
 
@@ -49,7 +49,7 @@ deb https://mirrors.tuna.tsinghua.edu.cn/proxmox/debian bullseye pve-no-subscrip
 
 删除企业源
 ```
-rm /etc/apt/sources.list.d/pve-enterprise.list```
+rm /etc/apt/sources.list.d/pve-enterprise.list
 ```
 
 更新源,并安装编译必要的依赖
