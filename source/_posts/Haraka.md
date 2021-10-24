@@ -212,9 +212,9 @@ chmod 755 ./swaks
 ```shell
 ### 设置 Key
 export CF_Key="xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-export CF_Email="xxxxxx@xx.cxom"
+export CF_Email="xxxxxx@xxx.xxx"
 
-### 获取 acme
+### 获取 acme.sh
 git clone https://github.com/acmesh-official/acme.sh.git
 cd ./acme.sh
 ./acme.sh --install
