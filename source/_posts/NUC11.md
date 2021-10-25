@@ -273,7 +273,9 @@ EndSection
 
 ![](https://ae01.alicdn.com/kf/Hbd36adf4e18e4cfebd0df945d5295acb0.png)
 
-重启后基本没问题了~
+虽然这样一顿操作后,闪屏频率减少了.但是偶尔还会有
+最终我把Linux内核版本降到5.10.x,这个问题才被解决
+
 
 > [参考文章]
 > [从初代到11代，英特尔NUC捡漏全指南](https://post.smzdm.com/p/apx5mv6x/)
