@@ -109,17 +109,17 @@ curl -L -O http://mrchromebox.tech/firmware-util.sh
 sudo bash firmware-util.sh
 ```
 
-![](https://i.abyss.moe/images/1c5e5fcaf87b9742014d3f2a121c382c.png)
+![](https://ae01.alicdn.com/kf/Hadee971cce8e4c54a3df4d9bfb36810de.png)
 
 如果你已经把 `WP (write protect)` 解除，这边的WP应该是绿色的
 没解锁的话是红色的
 
-![](https://i.abyss.moe/images/14ad8e8c03a8b31277202c8983b6ca0d.png)
+![](https://ae01.alicdn.com/kf/H995f0b86ecc64713b422aea94a9adbc1W.png)
 
 输入2 选择 Install UEFI (Full ROM) Firmware
 会提示你会有风险，输入y继续。之后会提示你插入个U盘备份，插入后选1就行了
 
-![](https://i.abyss.moe/images/9eb4b5b205bc66210d19cd49d446dbc8.png)
+![](https://ae01.alicdn.com/kf/H7dce64f9bd1f454ab758fdd2de68d04eX.png)
 
 下载和安装完成后，按 Enter 返回主菜单。按R重启
 
