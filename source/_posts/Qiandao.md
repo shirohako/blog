@@ -45,7 +45,7 @@ $(pwd)为当前目录,可以根据自己需求替换
 docker run -d --name qiandao -p 8923:80 -v $(pwd)/qiandao/config:/usr/src/app/config a76yyyy/qiandao
 ```
 
-这时候访问你的 http://ip:8923 的话,你应该能正常看到`qiandao`的`webui`
+这时候访问 http://ip:8923 的话,你应该能正常看到`qiandao`的`webui`
 
 ![](https://ae01.alicdn.com/kf/H902a6b67e4c04a9e887a321dc3bcc104S.png)
 
@@ -75,7 +75,7 @@ exit
 ### 使用 Nginx 反向代理
 
 Nginx的话可以直接通过包管理安装
-创建一个新的`vhost`配置,`location`反向代理8923端口即可
+创建一个新的`server`配置,`location`反向代理8923端口即可
 
 ```
 location /
@@ -87,7 +87,7 @@ location /
 ## 创建模版
 
 创建签到任务前,首先要编写模版
-这里以在`PSNine`签到为例,简单说下如何保存HAR,建立模版的过程
+这里以在`PSNine`签到为例,简单说下如何保存HAR,还有建立模版的过程
 需要准备2个帐号,一个现代的浏览器(Chrome, Edge, Firefox etc..)
 
 
@@ -99,7 +99,7 @@ location /
 
 
 点击签到按钮后,后会多出几个请求`log`
-右键第一个`Request`,选择`Save all as HAR with content`
+右键第一个`Request`,选择`Save all as HAR with content`保存HAR文件
 
 ![](https://ae01.alicdn.com/kf/Hc7744d337b8e47e0ba7d3dcbe5f3025fL.png)
 
@@ -120,13 +120,14 @@ location /
 为方便我们查看日志,我们用正则提取出来,比如这样
 
 ```
-day        <b style="color:red;">(\d+)<
-coin       <b style="color:green;">(\d+)<
+coin        <b style="color:red;">(\d+)<
+day         <b style="color:green;">(\d+)<
 ```
 
-![](https://ae01.alicdn.com/kf/Hca0f415c532a4203b6299c16d5ef0c89I.png)
+![](https://ae01.alicdn.com/kf/H1f995c52916a4c1c9288238707228961E.png)
 
-然后插入一个`unicode转换`,点击保存
+这样`签到的天数`和`铜币数量`就保存在变量`day`和`coin`中了.点击保存一次
+接着我们继续插入一个`unicode转换`, 点击保存
 
 ![](https://ae01.alicdn.com/kf/H2da01d062cc34bcdbbc9c6388f3eb93a4.png)
 
@@ -146,6 +147,8 @@ coin       <b style="color:green;">(\d+)<
 如果装了GetCookie浏览器插件,应该可以直接点击获取
 
 ![](https://ae01.alicdn.com/kf/He8d0b855cae04126974b99de2c08f045A.png)
+
+### 如何取得cookie
 
 关于手动获取`cookie`的方法,先打开想要获取的网站
 
