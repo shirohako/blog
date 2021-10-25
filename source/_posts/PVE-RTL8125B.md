@@ -6,15 +6,15 @@ tags:
 
 ## Prologue
 
-年末对自己`分流设备`做了一次配置升级
+年末对自己`分流设备`做了一次配置升级,宿主机系统选择了`Proxmox VE`
 `CPU`把原先的`AMD Ryzen 3 2200G`,更换为了`ADM R5 5600G`
-主板从`B450M-A`换成了`MSI MAG B550M MORTAR WIFI`
+主板从`A320M-HDV`换成了`MSI MAG B550M MORTAR WIFI`
 
 ![](https://ae01.alicdn.com/kf/H9f3740a02b1f4b408b67df3e7c1cdae7r.jpg)
 
 
 `B550M`这块主板自带了`2.5G LAN`口,正好配合我的交换机和NAS使用
-宿主机器系统换成了`PVE`,Linux kernels 5.4+的已自带`R8169`驱动,支持`Realtek 8169/8168/8101/8125`
+由于换成了`PVE 7.0`,Linux kernels 5.4+已自带`R8169`驱动,支持`Realtek 8169/8168/8101/8125`
 这里记录下之前装驱动的瞎折腾过程
 
 ## Get Ethernet Driver
