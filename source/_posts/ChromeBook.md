@@ -100,10 +100,7 @@ shell
 需要连接到`Github`，大陆网络可能会无法直接连接
 
 ```shell
-## 如果你没有科学上网的话，可以使用这个链接代替
-## https://storage.abyss.moe/github/MrChromebox/scripts/firmware-util.sh
-
-## curl 使用代理
+## 需要连接到Github,网络有困难的话,可以配置代理
 ## export http_proxy=http://ip:port
 ## export https_proxy=http://ip:port
 
