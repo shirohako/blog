@@ -12,7 +12,7 @@ tags: [unboxing,QNAP,NAS]
 ## Intro
 
 本次开箱的是`QNAP-873A` 8G,一台威联通`NAS`
-作为2021发布的新品,使用了 AMD Ryzen V1500B 作为CPU.
+作为2021发布的新品,使用了 AMD Ryzen V1500B 作为 CPU.
 同价位8盘位的`Synology DS1821+`也是用了这颗U,但是默认4G内存,而且没有2.5G板载网卡.这次还是选择了`威联通`
 这次双十一叠加优惠后到手6100CNY左右
 
@@ -46,19 +46,19 @@ tags: [unboxing,QNAP,NAS]
 
 ![](https://ae01.alicdn.com/kf/H7d3b0ed700534f6ea51285f385622746G.jpg)
 
-左侧有2个 PCIE 接口,左边就是主板
+左侧有2个 PCIE 接口,左边其实就是主板了
 ![](https://ae01.alicdn.com/kf/H3e7c914fa1f14adfbb183b12767c159c0.jpg)
 
 右边是风扇和硬盘背板的插供电的地方,使用了个20pin供电口
 
 ![](https://ae01.alicdn.com/kf/Hbdb3513c2bf84e3288d8b1bf161c4be0A.jpg)
 
-左边是主板,常规的24pin供电,有2个M2接口可以扩展(我把吃灰的Lexar装上去了
+左边是主板,常规的24pin供电,有2个M2接口可以扩展(我把吃灰的`Lexar 500G`装上去了
 自带一块`Transcend TS1GSH64V6B 8G 2666`内存 (创见,国内好像很少见到这个牌子)
 
 这个M2插槽卡扣设计的很方便,不用在用螺丝固定了
 
-内存我追加了一块吃灰的`协德8G内存`的上去,官网建议双通道用同样型号的内存,不过我觉得没什么问题
+内存我追加了一块吃灰的`协德 8G内存`的上去,官网建议双通道用同样型号的内存,不过我觉得没什么问题
 (For dual-DIMM configurations, you must use a pair of identical DDR4 modules.)
 (当然后面我测试后有提到,内存并不能随意添加)
 
@@ -141,11 +141,11 @@ https://view.publitas.com/qnap-1/quts-hero-whitepaper_final_cn/
 
 ![](https://ae01.alicdn.com/kf/H08557be3bfee406cac63a147d0bb91bfc.png)
 
-打开控制台看了下,我虽然追加了一根8G的 SO-DIMM 上去,但是并不可用(混插闲置的杂牌内存果然不行啊
+打开控制台看了下,我虽然追加了一根8G的 SO-DIMM 上去,`但是并不可用` (混插闲置的杂牌内存果然不行啊
 
 ![](https://ae01.alicdn.com/kf/Hc7ff08b9a1ee4505ad5faa6c74a25aa9h.png)
 
-数据盘我准备了2块18T的HC550,这也是我第一次购入企业级硬盘
+数据盘我准备了2块18T的`HC550`,这也是我第一次购入企业级硬盘
 
 ![](https://ae01.alicdn.com/kf/H2dc6f85e2b42449591a69908d591c40a4.jpg)
 
@@ -191,11 +191,11 @@ https://www.qnap.com/en/app_center/
 
 ![](https://ae01.alicdn.com/kf/H4e55440d4565452d8606d7ff41451a76w.png)
 
-这次没有问题..
+这次没有问题..也不需要登录
 
 ![](https://ae01.alicdn.com/kf/Ha4c012a5851e4b1cb06a2ee7fc31c93cd.png)
 
-QVS的总览长这样
+QVS 的总览长这样
 
 ![](https://ae01.alicdn.com/kf/Hc303b01bd25b47baa2e65cbb7d7f28338.png)
 

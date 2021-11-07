@@ -143,19 +143,20 @@ day         <b style="color:green;">(\d+)<
 
 ## 签到
 
-新建一个签到任务,填上自己的`cookie`即可
+新建一个签到任务,填上自己的`Cookie`即可
 如果装了GetCookie浏览器插件,应该可以直接点击获取
 
 ![](https://ae01.alicdn.com/kf/He8d0b855cae04126974b99de2c08f045A.png)
 
 ### 如何取得cookie
 
-关于手动获取`cookie`的方法,先打开想要获取的网站
+关于手动获取`Cookie`的方法,先打开想要获取的网站
 
 F12打开控制台,切换到`Console`页面,输入`document.cookie`,去掉前后的`'`就是你的`cookie`
+**请注意** {% label primary@这样是无法获取带 HTTP Onl` 的 Cookie %},也就是可能获取不全.所以**请使用下面的方法**
 
 ![](https://ae01.alicdn.com/kf/H58a68119479a479cac2e3a79b158a6a1N.png)
 
-或者在`Network`选项卡里面打开任意请求,找到`Request Headers`,把`cookie`复制出来
+或者在`Network`选项卡里面打开任意请求,找到`Request Headers`,把`Cookie`内容复制出来
 
 ![](https://ae01.alicdn.com/kf/Hb9833860f5834751b6cf043d49ee9789q.png)
