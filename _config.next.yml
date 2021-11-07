@@ -125,7 +125,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: https://abyss.moe/avatar.jpg
+  url: https://cdn.jsdelivr.net/gh/shirohako/helm@latest/avatar.jpg
   # If true, the avatar will be dispalyed in circle.
   rounded: true
   # If true, the avatar will be rotated with the cursor.
