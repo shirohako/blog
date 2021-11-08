@@ -1,5 +1,5 @@
 ---
-title: QNAP-873A 开箱和简单上手
+title: QNAP TS-873A 开箱和简单上手
 date: 2021-11-07 19:17:17
 tags: [QNAP,NAS]
 categories: [Unboxing]
