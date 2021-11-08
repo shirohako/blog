@@ -12,7 +12,7 @@ categories: [Unboxing]
 
 ## Intro
 
-本次开箱的是`QNAP-873A` 8G,一台威联通`NAS`
+本次开箱的是`QNAP TS-873A` 8G,一台威联通`NAS`
 作为2021发布的新品,使用了 AMD Ryzen V1500B 作为 CPU.
 同价位8盘位的`Synology DS1821+`也是用了这颗U,但是默认4G内存,而且没有2.5G板载网卡.这次还是选择了`威联通`
 这次双十一叠加优惠后到手6000CNY左右
