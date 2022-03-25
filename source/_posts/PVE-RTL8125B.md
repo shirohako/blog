@@ -34,12 +34,11 @@ https://mirrors.tuna.tsinghua.edu.cn/help/debian/
 
 Debian 的软件源配置文件是 `/etc/apt/sources.list`
 ```
-deb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster main contrib non-free
-deb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-updates main contrib non-free
-
-deb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-backports main contrib non-free
-
-deb https://mirrors.tuna.tsinghua.edu.cn/debian-security buster/updates main contrib non-free
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free
 ```
 
 然后添加非商业源,编辑 `/etc/apt/sources.list.d/pve-no-subscription.list`
