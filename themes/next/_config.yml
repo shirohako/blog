@@ -57,7 +57,7 @@ favicon:
   #android_manifest: /manifest.json
 
 # Custom Logo (Warning: Do not support scheme Mist)
-custom_logo: #/uploads/custom-logo.jpg
+custom_logo: #/uploads/custom-logo.png
 
 # Creative Commons 4.0 International License.
 # See: https://creativecommons.org/about/cclicenses/
@@ -282,7 +282,7 @@ reward:
 follow_me:
   #Twitter: https://twitter.com/username || fab fa-twitter
   #Telegram: https://t.me/channel_name || fab fa-telegram
-  #WeChat: /images/wechat_channel.jpg || fab fa-weixin
+  #WeChat: /images/wechat_channel.png || fab fa-weixin
   #RSS: /atom.xml || fa fa-rss
 
 # Related popular posts
@@ -336,7 +336,7 @@ calendar:
 # See: https://theme-next.js.org/docs/theme-settings/miscellaneous
 # ---------------------------------------------------------------
 
-# Preconnect CDN for fonts and plugins.
+# Preload styles and preconnect CDN for fonts and plugins.
 # For more information: https://www.w3.org/TR/resource-hints/#preconnect
 preconnect: false
 
@@ -610,6 +610,8 @@ changyan:
   enable: false
   appid:
   appkey:
+  # Show comments count
+  count: true
 
 # LiveRe comments system
 # You can get your uid from https://livere.com/insight/myCode (General web site)
@@ -692,6 +694,27 @@ cloudflare_analytics:
 # Microsoft Clarity Analytics
 # See: https://clarity.microsoft.com/
 clarity_analytics: # <project_id>
+
+# Matomo Analytics
+# See: https://matomo.org/
+matomo:
+  enable: false
+  server_url: # https://www.example.com/
+  site_id: # <your site id>
+
+# Umami Analytics
+# See: https://umami.is/
+umami:
+  enable: false
+  script_url: # https://umami.example.com/script.js
+  website_id: # <your website id>
+
+# Plausible Analytics
+# See: https://plausible.io/
+plausible:
+  enable: false
+  script_url: # https://plausible.io/js/script.js
+  site_domain: # www.example.com
 
 # Show number of visitors of each article.
 # You can visit https://www.leancloud.cn to get AppID and AppKey.
@@ -885,7 +908,7 @@ vendors:
   # The default CDN provider of third-party plugins.
   # Available values: local | jsdelivr | unpkg | cdnjs | custom
   # Dependencies for `plugins: local`: https://github.com/next-theme/plugins
-  plugins: jsdelivr
+  plugins: cdnjs
   # Custom CDN URL
   # For example:
   # custom_cdn_url: https://cdn.jsdelivr.net/npm/${npm_name}@${version}/${minified}
