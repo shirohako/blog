@@ -65,15 +65,7 @@ root@shirobako:/var/lib/vz/dump# qemu-img convert -f raw -O vmdk disk-drive-sata
 在ESXI中新建虚拟机,前面三步骤正常选择
 在详细配置的时候,删除默认的硬盘,在菜单中添加一个新的硬盘
 
-![](https://pic3.58cdn.com.cn/nowater/webim/big/n_v2c126ef024b0f48c4a1e8b1b40adccedf.png)
-
-
 这里还要注意下,我在PVE的 SCSI Controller Type里选择是 VirtIO SCSI
 但是导入后我无论选择 SCSI控制器还是SATA控制器都启动不了,只能使用IDE控制器
-
-![](https://pic3.58cdn.com.cn/nowater/webim/big/n_v2e9088ecc0d7d404a9d9fd59d6b304d70.png)
-
-![](https://pic3.58cdn.com.cn/nowater/webim/big/n_v28f20f75fb6044c2abd93cfd0e795aa85.png)
-
 
 完成创建后启动试试,如果能正常开启虚拟机就没问题了
