@@ -4,12 +4,12 @@
 
 # Site
 title: 雨声残响
-subtitle: ame's memo
-description: ''
+subtitle: 'Echo Of Rain'
+description: 'ame's memo'
 keywords:
 author: ame
 language: en
-timezone: ''
+timezone: 'Asia/Tokyo'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
