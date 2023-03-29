@@ -13,7 +13,7 @@ categories: [Game]
 
  Special thanks: **kk** (kello820), **hafu** (ErisFloralia)
 
-<button class="locale btn" lang="zht"><i class="fa fa-language fa-fw fa-lg"></i> 中文</button><button class="locale btn" lang="jp"><i class="fa fa-language fa-fw fa-lg"></i> 日本語</button>
+<button class="locale btn" lang="zht" title="中文"><i class="fa fa-language fa-fw fa-lg"></i> 中文</button><button class="locale btn" lang="jp" title="日本語"><i class="fa fa-language fa-fw fa-lg"></i> 日本語</button>
 
 <script
   src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
@@ -22,7 +22,7 @@ categories: [Game]
 </script>
 <script>
   $(function() {
-      $('button').click(function(){
+      $('.locale').click(function(){
         const lang = $(this).attr('lang');
         $('.memoirs td').each(function(){
           const _text = $(this).attr(lang)
