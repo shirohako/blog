@@ -22,7 +22,7 @@ categories: [Game]
 </script>
 <script>
   $(function() {
-      $('button.locale').click(function(){
+      $('button').click(function(){
         const lang = $(this).attr('lang');
         $('.memoirs td').each(function(){
           const _text = $(this).attr(lang)
