@@ -7,8 +7,11 @@ categories: [Game]
 
 # Overview
 
-「ライザのアトリエ3」旅人の見聞録の場所・入手方法一覧
-「莱莎的炼金工房3」全部見聞録地點・获得方法一覧
+- 「ライザのアトリエ3」旅人の見聞録の場所・入手方法一覧
+- 「莱莎的炼金工房3」全部見聞録地點・获得方法一覧
+
+
+ Special thanks: **kk** (kello820), **hafu** (ErisFloralia)
 
 <button class="locale btn" lang="zht"><i class="fa fa-language fa-fw fa-lg"></i> 中文</button><button class="locale btn" lang="jp"><i class="fa fa-language fa-fw fa-lg"></i> 日本語</button>
 
