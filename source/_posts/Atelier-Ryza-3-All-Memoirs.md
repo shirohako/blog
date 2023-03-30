@@ -15,13 +15,13 @@ categories: [Game]
 
 <button class="locale btn" lang="zht" title="中文"><i class="fa fa-language fa-fw fa-lg"></i> 中文</button><button class="locale btn" lang="jp" title="日本語"><i class="fa fa-language fa-fw fa-lg"></i> 日本語</button>
 
-<script
-  src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
-  integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
-  crossorigin="anonymous">
-</script>
-<script>
-  $(function() {
+<script data-pjax>
+  let script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "https://code.jquery.com/jquery-3.6.4.slim.min.js";
+  document.body.appendChild(script);
+
+  script.onload = function(e){
       $('.locale').click(function(){
         const lang = $(this).attr('lang');
         $('.memoirs td').each(function(){
@@ -32,7 +32,7 @@ categories: [Game]
           }
         })
       })
-  });
+  }
 </script>
 
 ## 庫肯島周邊地區 (クーケン島周辺地域)
