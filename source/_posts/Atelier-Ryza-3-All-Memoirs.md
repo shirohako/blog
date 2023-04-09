@@ -523,7 +523,7 @@ categories: [Game]
 ![](https://i.psray.net/i/2023/03/28/6422b8a65e110.jpg)
 ![](https://i.psray.net/i/2023/03/28/6422b8a429b44.jpg)
 
-### 77 歐蘭族商人的日記 ()
+### 77 欧兰族商人的日记 (オーレン族商人の日記)
 ![](https://i.psray.net/i/2023/03/29/6423aa8226d52.jpg)
 ![](https://i.psray.net/i/2023/03/29/6423aa81bc0f3.jpg)
 
