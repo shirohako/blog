@@ -153,7 +153,7 @@ day         <b style="color:green;">(\d+)<
 关于手动获取`Cookie`的方法,先打开想要获取的网站
 
 F12打开控制台,切换到`Console`页面,输入`document.cookie`,去掉前后的`'`就是你的`cookie`
-**[更新] 请注意** {% label primary@这样是无法获取带 HTTP Onl` 的 Cookie %},也就是可能获取不全.所以**请使用下面的方法**
+**[更新] 请注意** {% label primary@这样是无法获取带 HTTP Only 的 Cookie %},也就是可能获取不全.所以**请使用下面的方法**
 
 ![](https://ae01.alicdn.com/kf/H58a68119479a479cac2e3a79b158a6a1N.png)
 
