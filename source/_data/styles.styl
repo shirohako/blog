@@ -117,6 +117,7 @@ a, .back-to-top-cat, .fa-copy, button {
 .main-inner.post {
   background: var(--content-bg-color);
 
+  // 背景
   .post-block {
     background-image: linear-gradient(90deg, rgba(159, 219, 252, 0.15) 3%, transparent 0), linear-gradient(1turn, rgba(159, 219, 252, 0.15) 3%, transparent 0);
     background-size: 20px 20px;
@@ -129,286 +130,300 @@ a, .back-to-top-cat, .fa-copy, button {
     background-color: $SHION;
   }
 
-  code {
-    background-color: #eff6fc;
-    font-family: iosevka, microsoft yahei, monospace;
-    padding: 0.1em 0.3em;
-    margin: 0 0.2em;
-    border-bottom: 2px solid #c7e0f4;
-  }
-
-  strong {
-    background: linear-gradient(transparent 80%, rgba(rgb($SAKURA), 1) 80%);
-    padding: 2px 4px;
-  }
-
-  // 链接
-  p > a {
-    background: linear-gradient(transparent 80%, rgba(rgb($SAKURA), 0.8) 80%);
-    color: var(--link-color);
-    text-decoration: none;
-    border-bottom: none;
-  }
-
-  p > a:hover {
-    background: linear-gradient(transparent 80%, rgba(rgb($SHION), 0.8) 80%);
-  }
-
-  // 代码块
-  figure.highlight {
-    background: $SHION;
-    border-radius: 5px;
-
-    .table-container {
-      background-color: #fff;
+  .post-body {
+    code {
+      background-color: #eff6fc;
+      font-family: iosevka, microsoft yahei, monospace;
+      padding: 0.1em 0.3em;
+      margin: 0 0.2em;
+      border-bottom: 2px solid #c7e0f4;
     }
 
-    .copy-btn i {
-      color: #fff;
+    strong {
+      background: linear-gradient(transparent 80%, rgba(rgb($SAKURA), 1) 80%);
+      padding: 2px 4px;
     }
 
-    pre {
+    // 链接
+    p > a {
+      background: linear-gradient(transparent 80%, rgba(rgb($SAKURA), 0.8) 80%);
+      color: var(--link-color);
+      text-decoration: none;
+      border-bottom: none;
+    }
+
+    p > a:hover {
+      background: linear-gradient(transparent 80%, rgba(rgb($SHION), 0.8) 80%);
+    }
+
+    // 代码块
+    figure.highlight {
+      background: $SHION;
+      border-radius: 5px;
+
+      .table-container {
+        background-color: #fff;
+      }
+
+      .copy-btn i {
+        color: #fff;
+      }
+
+      pre {
+        font-size: 0.85em;
+      }
+    }
+
+    // 引用
+    blockquote {
+      border: 0;
+      background: #e4ebf6;
+      color: #667a99;
+      border-radius: 4px;
+      padding: 8px 15px;
+      border-top: 2px dotted #fff;
+      border-bottom: 2px dotted #fff;
+      margin: 0 0 20px;
+
+      p:nth-child(1) {
+        margin-bottom: 0;
+      }
+
+      a {
+        background: linear-gradient(transparent 85%, #c4b8f5 77%);
+      }
+
+      a:hover {
+        background: linear-gradient(transparent 85%, #957ff1 77%);
+      }
+    }
+
+    // 列表
+    ol, ul {
+      list-style: none;
+      counter-reset: li;
+      margin: 15px 0;
+      padding-inline-start: 25px;
+
+      li:before {
+        color: #fff;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+    }
+
+    ol > li:before {
+      margin: 0 0.6em 0 0;
+      width: 1.5em;
+      height: 1.5em;
+      border-radius: 50%;
+      content: counter(li);
+      counter-increment: li;
+      text-align: center;
+      line-height: 1.6em;
+      display: inline-block;
+      background: $SHION;
+      vertical-align: middle;
+      font-size: 1em;
+    }
+
+    ul li:before {
+      margin: -0.2em 0.5em 0 0.45em;
+      width: 0.65em;
+      height: 0.65em;
+      border: 0.15em solid $SHION;
+      border-radius: 1rem;
+      background: #fff;
+      content: '';
+      line-height: 2em;
+      display: inline-block;
+      vertical-align: middle;
       font-size: 0.85em;
     }
-  }
 
-  // 标签 Github-Card
-  .github-card {
-    display: flex;
-    border: 1px solid;
-    padding: 5px 25px;
-    border-radius: 10px;
-    margin: 0 0 20px 0;
-
-    .github-card-icon {
-      display: flex;
-      margin-right: 25px;
-    }
-
-    .github-card-icon i {
-      font-size: 96px;
-      align-self: center;
-    }
-
-    .github-card-title {
+    // Heading 1
+    // Code via https://blog.logrocket.com/five-cool-css-header-styles-with-cross-browser-compatibility/
+    h1 {
+      position: relative;
+      width: 80%;
+      font-size: 1.5rem;
       font-weight: 600;
-      color: #f05f70;
-      font-size: 1.15em;
-      margin: 5px 0 0 0;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-image: repeating-radial-gradient(farthest-side at 5px 5px, #553c9a, #ee4b2b, #553c9a);
     }
 
-    .github-card-desc {
-      text-align: initial;
+    // Heading 2
+    // Code via https://juejin.cn/post/7167963283176521741
+    h2 {
+      display: block;
+      border-bottom: 4px solid #4dd0e1;
+      position: relative;
+      font-size: 1.3rem;
+      padding: 12px 32px;
+      margin: 30px 0;
+      color: #4dd0e1;
     }
 
-    .github-card-button {
-      margin-bottom: 10px;
-      color: #fff;
+    h2:before {
+      width: 24px;
+      height: 24px;
+      left: 0;
+      top: 0;
+      margin: auto;
+      background-size: 24px 24px;
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADGklEQVRYR81X32vTYBQ999s6mFjQgQ+DrbHiVFZYU4cDcQ/6pGhTFVYFEXGi82H+Bz448UnEF1Fx9ccEEcXpZE3d5tP2ooKiTacTHaLNpigMHDgnU9tcSbrWrkwWR0sbyEOSe885ObnfvV8IRT6oyPwoLQHBx+OVM5WJvSyEVAhnBOjt7yU/+/rr6r6l8TMO+F/EN0JQhICqQpD/xaRpcpAc9tS+M+9lBCia/oqBamK+zeDuQogQZaKJk3wcQjxSva7tGQGB2Ke1zIk3DNyMyNL+QpCnMQOaPsDAVuGAp9cjvbYc8Ec/bCYSg0zoiHilk1tHxqsqEsYlML4kjIpT/eurJxRNPweQU5VdrWaOEo1fgKAVbBgXIz73kF3R/ph+ghgdzMYWM29eAWlBJqgZaFlFYtC6nhWpaDqnSGlIlV1WjJ3DloDNgyNLncudqgX//Ucg3LxuStHGuhi8pqKCW3rqV342rwFjRznKm+/LNaN2yC237ThgF2wxcfMLeP6+ncrKzoPoKTGeLQbYbg4TNoC5iZPJY5HGVRdSNZAWYBclD3FzBQzrR8hACAKdzBzKA/4/IYioDQaOskBbpEG6PO8qKKSAEi3CnEb0Pw4oMf0OmKbTDWqh3Lw6EIiNBZi5lxh3wz4puBD5ovqAMvxhHSdFKxE1CQe3m/07TeTX4lcJdAhE+1Sv65Z5P/ByvIGTRowIZ9igbtXnmrOsbTvgj+kHBNMuBu9OdVw8EeU4nC1A0cYmAHZOTRrLhra4Z8ywnSN6vZHAFTA2WnnMfQB3qz73ddsOZM8CACFDIPSgQXqebXEgqgeZcAeEe6pXasm1f8ew3igMtAHWac0Uc/jYdyAaP0xEBwFsmgUPqbJ0NE2UKj4EGcahiOzuyhagaHpnmtgcVgTcCMuua7YdyAHbA3ArQNscVFbb4635aD6fnYaTvxxi9UNP7ddMXaRWVBdAcaLk6bDXPZCNZ9uBXEsDUX1T2Cc9yjig6Z0EHg3LK8/aqf6MwJKchkXfks1+0+JtSq3qLPa23BRR1B+T/6nkfMaW1r9hPt/MLtYfTLEpP+T9FNoAAAAASUVORK5CYII='); // Ucg3LxuStHGuhi8pqKCW3rqV342rwFjRznKm+/LNaN2yC237ThgF2wxcfMLeP6+ncrKzoPoKTGeLQbYbg4TNoC5iZPJY5HGVRdSNZAWYBclD3FzBQzrR8hACAKdzBzKA/4/IYioDQaOskBbpEG6PO8qKKSAEi3CnEb0Pw4oMf0OmKbTDWqh3Lw6EIiNBZi5lxh3wz4puBD5ovqAMvxhHSdFKxE1CQe3m/07TeTX4lcJdAhE+1Sv65Z5P/ByvIGTRowIZ9igbtXnmrOsbTvgj+kHBNMuBu9OdVw8EeU4nC1A0cYmAHZOTRrLhra4Z8ywnSN6vZHAFTA2WnnMfQB3qz73ddsOZM8CACFDIPSgQXqebXEgqgeZcAeEe6pXasm1f8ew3igMtAHWac0Uc/jYdyAaP0xEBwFsmgUPqbJ0NE2UKj4EGcahiOzuyhagaHpnmtgcVgTcCMuua7YdyAHbA3ArQNscVFbb4635aD6fnYaTvxxi9UNP7ddMXaRWVBdAcaLk6bDXPZCNZ9uBXEsDUX1T2Cc9yjig6Z0EHg3LK8/aqf6MwJKchkXfks1+0+JtSq3qLPa23BRR1B+T/6nkfMaW1r9hPt/MLtYfTLEpP+T9FNoAAAAASUVORK5CYII=');
+    }
 
-      button {
-        color: #fff;
-        cursor: pointer;
-        border: none;
-        border-radius: 5px;
+    h2:after {
+      right: 0;
+      width: 400px;
+      height: 10px;
+      border-top-right-radius: 24px;
+      background: linear-gradient(90deg, #fff, #4dd0e1);
+      max-width: 50vw;
+    }
+
+    h2:after, h2:before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+    }
+
+    h3 {
+      font-size: 1.175rem;
+    }
+
+    h3:before {
+      content: '[';
+      margin-right: 5px;
+      color: $TSUYUKUSA;
+      font-size: 1.125em;
+    }
+
+    h3:after {
+      content: ']';
+      margin-left: 5px;
+      color: $TSUYUKUSA;
+      font-size: 1.125em;
+    }
+
+    // 底部版权
+    .post-copyright {
+      font-size: 0.875em;
+      border-radius: 3px;
+      background-color: rgba(rgb($SHION), 0.1);
+      padding: 15px 0 15px 15px;
+      border-left: 5px solid $KOHBAI;
+
+      .post-copyright-bg {
+        height: 100%;
+        padding-left: 165px;
+        background-image: url('/images/priest.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+        @media (min-width: 300px) {
+          min-height: 165px;
+        }
+
+        span {
+          word-break: keep-all;
+        }
       }
 
-      a:nth-child(1) > button {
-        background-color: $SHION;
-        margin-right: 5px;
+      .license-name {
+        font-weight: bold;
       }
 
-      a:nth-child(2) > button {
-        background-color: #e27784;
-        color: #fff;
+      p {
+        margin: 5px;
       }
 
-      a, a:hover, a:active, a:visited {
-        color: #fff;
-        background: none;
-        border: none;
-      }
-
-      button:focus, button:active:focus {
-        color: #fff;
-        outline: none;
-      }
-    }
-  }
-
-  // 引用
-  blockquote {
-    border: 0;
-    background: #e4ebf6;
-    color: #667a99;
-    border-radius: 4px;
-    padding: 8px 15px;
-    border-top: 2px dotted #fff;
-    border-bottom: 2px dotted #fff;
-    margin: 0 0 20px;
-
-    p:nth-child(1) {
-      margin-bottom: 0;
-    }
-
-    a {
-      background: linear-gradient(transparent 85%, #c4b8f5 77%);
-    }
-
-    a:hover {
-      background: linear-gradient(transparent 85%, #957ff1 77%);
-    }
-  }
-
-  // 列表
-  ol, ul {
-    list-style: none;
-    counter-reset: li;
-    margin: 15px 0;
-    padding-inline-start: 25px;
-
-    li:before {
-      color: #fff;
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-  }
-
-  ol > li:before {
-    margin: 0 0.6em 0 0;
-    width: 1.5em;
-    height: 1.5em;
-    border-radius: 50%;
-    content: counter(li);
-    counter-increment: li;
-    text-align: center;
-    line-height: 1.6em;
-    display: inline-block;
-    background: $SHION;
-    vertical-align: middle;
-    font-size: 1em;
-  }
-
-  ul li:before {
-    margin: -0.2em 0.5em 0 0.45em;
-    width: 0.65em;
-    height: 0.65em;
-    border: 0.15em solid $SHION;
-    border-radius: 1rem;
-    background: #fff;
-    content: '';
-    line-height: 2em;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 0.85em;
-  }
-
-  // H2 Heading
-  // Copy via https://juejin.cn/post/7167963283176521741
-  h2 {
-    display: block;
-    border-bottom: 4px solid #4dd0e1;
-    position: relative;
-    font-size: 1.3rem;
-    padding: 12px 32px;
-    margin: 30px 0;
-    color: #4dd0e1;
-  }
-
-  h2:before {
-    width: 24px;
-    height: 24px;
-    left: 0;
-    top: 0;
-    margin: auto;
-    background-size: 24px 24px;
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADGklEQVRYR81X32vTYBQ999s6mFjQgQ+DrbHiVFZYU4cDcQ/6pGhTFVYFEXGi82H+Bz448UnEF1Fx9ccEEcXpZE3d5tP2ooKiTacTHaLNpigMHDgnU9tcSbrWrkwWR0sbyEOSe885ObnfvV8IRT6oyPwoLQHBx+OVM5WJvSyEVAhnBOjt7yU/+/rr6r6l8TMO+F/EN0JQhICqQpD/xaRpcpAc9tS+M+9lBCia/oqBamK+zeDuQogQZaKJk3wcQjxSva7tGQGB2Ke1zIk3DNyMyNL+QpCnMQOaPsDAVuGAp9cjvbYc8Ec/bCYSg0zoiHilk1tHxqsqEsYlML4kjIpT/eurJxRNPweQU5VdrWaOEo1fgKAVbBgXIz73kF3R/ph+ghgdzMYWM29eAWlBJqgZaFlFYtC6nhWpaDqnSGlIlV1WjJ3DloDNgyNLncudqgX//Ucg3LxuStHGuhi8pqKCW3rqV342rwFjRznKm+/LNaN2yC237ThgF2wxcfMLeP6+ncrKzoPoKTGeLQbYbg4TNoC5iZPJY5HGVRdSNZAWYBclD3FzBQzrR8hACAKdzBzKA/4/IYioDQaOskBbpEG6PO8qKKSAEi3CnEb0Pw4oMf0OmKbTDWqh3Lw6EIiNBZi5lxh3wz4puBD5ovqAMvxhHSdFKxE1CQe3m/07TeTX4lcJdAhE+1Sv65Z5P/ByvIGTRowIZ9igbtXnmrOsbTvgj+kHBNMuBu9OdVw8EeU4nC1A0cYmAHZOTRrLhra4Z8ywnSN6vZHAFTA2WnnMfQB3qz73ddsOZM8CACFDIPSgQXqebXEgqgeZcAeEe6pXasm1f8ew3igMtAHWac0Uc/jYdyAaP0xEBwFsmgUPqbJ0NE2UKj4EGcahiOzuyhagaHpnmtgcVgTcCMuua7YdyAHbA3ArQNscVFbb4635aD6fnYaTvxxi9UNP7ddMXaRWVBdAcaLk6bDXPZCNZ9uBXEsDUX1T2Cc9yjig6Z0EHg3LK8/aqf6MwJKchkXfks1+0+JtSq3qLPa23BRR1B+T/6nkfMaW1r9hPt/MLtYfTLEpP+T9FNoAAAAASUVORK5CYII='); // Ucg3LxuStHGuhi8pqKCW3rqV342rwFjRznKm+/LNaN2yC237ThgF2wxcfMLeP6+ncrKzoPoKTGeLQbYbg4TNoC5iZPJY5HGVRdSNZAWYBclD3FzBQzrR8hACAKdzBzKA/4/IYioDQaOskBbpEG6PO8qKKSAEi3CnEb0Pw4oMf0OmKbTDWqh3Lw6EIiNBZi5lxh3wz4puBD5ovqAMvxhHSdFKxE1CQe3m/07TeTX4lcJdAhE+1Sv65Z5P/ByvIGTRowIZ9igbtXnmrOsbTvgj+kHBNMuBu9OdVw8EeU4nC1A0cYmAHZOTRrLhra4Z8ywnSN6vZHAFTA2WnnMfQB3qz73ddsOZM8CACFDIPSgQXqebXEgqgeZcAeEe6pXasm1f8ew3igMtAHWac0Uc/jYdyAaP0xEBwFsmgUPqbJ0NE2UKj4EGcahiOzuyhagaHpnmtgcVgTcCMuua7YdyAHbA3ArQNscVFbb4635aD6fnYaTvxxi9UNP7ddMXaRWVBdAcaLk6bDXPZCNZ9uBXEsDUX1T2Cc9yjig6Z0EHg3LK8/aqf6MwJKchkXfks1+0+JtSq3qLPa23BRR1B+T/6nkfMaW1r9hPt/MLtYfTLEpP+T9FNoAAAAASUVORK5CYII=');
-  }
-
-  h2:after {
-    right: 0;
-    width: 400px;
-    height: 10px;
-    border-top-right-radius: 24px;
-    background: linear-gradient(90deg, #fff, #4dd0e1);
-    max-width: 50vw;
-  }
-
-  h2:after, h2:before {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-  }
-
-  h3 {
-    font-size: 1.175rem;
-  }
-
-  h3:before {
-    content: '[';
-    margin-right: 5px;
-    color: $TSUYUKUSA;
-    font-size: 1.125em;
-  }
-
-  h3:after {
-    content: ']';
-    margin-left: 5px;
-    color: $TSUYUKUSA;
-    font-size: 1.125em;
-  }
-
-  // 底部版权
-  .post-copyright {
-    font-size: 0.875em;
-    border-radius: 3px;
-    background-color: rgba(rgb($SHION), 0.1);
-    padding: 15px 0 15px 15px;
-    border-left: 5px solid $KOHBAI;
-
-    .post-copyright-bg {
-      height: 100%;
-      padding-left: 165px;
-      background-image: url('/images/priest.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-
-      @media (min-width: 300px) {
-        min-height: 165px;
-      }
-
-      span {
-        word-break: keep-all;
+      p:last-child {
+        margin-bottom: 0;
       }
     }
 
-    .license-name {
-      font-weight: bold;
+    // 表格
+    table {
+      td[colspan] {
+        text-align: center;
+      }
     }
 
-    p {
-      margin: 5px;
-    }
-
-    p:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  // 表格
-  table {
-    td[colspan] {
+    .center * {
       text-align: center;
     }
-  }
 
-  .center * {
-    text-align: center;
+    .github-card {
+      display: flex;
+      border: 1px solid;
+      padding: 5px 25px;
+      border-radius: 10px;
+      margin: 0 0 20px 0;
+
+      .github-card-icon {
+        display: flex;
+        margin-right: 25px;
+      }
+
+      .github-card-icon i {
+        font-size: 96px;
+        align-self: center;
+      }
+
+      .github-card-title {
+        font-weight: 600;
+        color: #f05f70;
+        font-size: 1.15em;
+        margin: 5px 0 0 0;
+      }
+
+      .github-card-desc {
+        text-align: initial;
+      }
+
+      .github-card-button {
+        margin-bottom: 10px;
+        color: #fff;
+
+        button {
+          color: #fff;
+          cursor: pointer;
+          border: none;
+          border-radius: 5px;
+        }
+
+        a:nth-child(1) > button {
+          background-color: $SHION;
+          margin-right: 5px;
+        }
+
+        a:nth-child(2) > button {
+          background-color: #e27784;
+          color: #fff;
+        }
+
+        a, a:hover, a:active, a:visited {
+          color: #fff;
+          background: none;
+          border: none;
+        }
+
+        button:focus, button:active:focus {
+          color: #fff;
+          outline: none;
+        }
+      }
+    }
   }
 }
 
