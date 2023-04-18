@@ -667,25 +667,52 @@ add_this_id:
 # ---------------------------------------------------------------
 
 # Google Analytics
+# See: https://analytics.google.com
 google_analytics:
-  tracking_id: # <app_id>
+  tracking_id: G-1HHZ17CGGG
   # By default, NexT will load an external gtag.js script on your site.
   # If you only need the pageview feature, set the following option to true to get a better performance.
   only_pageview: false
 
 # Baidu Analytics
+# See: https://tongji.baidu.com
 baidu_analytics: # <app_id>
 
 # Growingio Analytics
+# See: https://www.growingio.com
 growingio_analytics: # <project_id>
 
-# CNZZ count
-cnzz_siteid:
+# Cloudflare Web Analytics
+# See: https://www.cloudflare.com/web-analytics/
+cloudflare_analytics:
+
+# Microsoft Clarity Analytics
+# See: https://clarity.microsoft.com/
+clarity_analytics: # <project_id>
+
+# Matomo Analytics
+# See: https://matomo.org/
+matomo:
+  enable: false
+  server_url: # https://www.example.com/
+  site_id: # <your site id>
+
+# Umami Analytics
+# See: https://umami.is/
+umami:
+  enable: true
+  script_url:  https://akari.abyss.moe/hotaru.js
+  website_id:  202e2328-52a9-4056-9f1b-2441bd16039f
+
+# Plausible Analytics
+# See: https://plausible.io/
+plausible:
+  enable: false
+  script_url: # https://plausible.io/js/script.js
+  site_domain: # www.example.com
 
 # Show number of visitors of each article.
 # You can visit https://www.leancloud.cn to get AppID and AppKey.
-# AppID and AppKey are recommended to be the same as valine's for counter compatibility.
-# Warning: Do not enable both `valine.visitor` and `leancloud_visitors`.
 leancloud_visitors:
   enable: false
   app_id: # <your app id>
@@ -707,7 +734,7 @@ firestore:
   projectId: # Required
 
 # Show Views / Visitors of the website / page with busuanzi.
-# Get more information on http://ibruce.info/2015/04/04/busuanzi/
+# For more information: http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   enable: false
   total_visitors: true
