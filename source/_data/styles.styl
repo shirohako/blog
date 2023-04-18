@@ -1,27 +1,46 @@
-@import "variables"
+@import 'variables';
+
 :root {
   --link-hover-color: $SHION;
 }
 
-//鼠标样式
-body, html
-  cursor: url("/images/cursor.png"), auto !important;
+// TOC
+.sidebar {
+  // TOC 内容
+  .sidebar-nav {
+    overflow: visible;
 
-//鼠标样式(链接)
-a, .back-to-top-cat, .fa-copy, button
+    &.sidebar-panel-container {
+      padding-top: 10px;
+    }
+  }
+  // 返回按钮
+  .back-to-top.back-to-top-on {
+    margin-top: 5px;
+  }
+}
+
+// 鼠标样式
+body, html {
+  cursor: url('/images/cursor.png'), auto !important;
+}
+
+// 鼠标样式(链接)
+a, .back-to-top-cat, .fa-copy, button {
   cursor: url('/images/cursor_link.png'), auto !important;
+}
 
-//侧边栏站标
+// 侧边栏站标
 .site-brand-container {
   background: $SHION;
 }
 
-//文章最大宽度
+// 文章最大宽度
 .main {
   max-width: 1380px;
 }
 
-//友情链接按钮
+// 友情链接按钮
 .friend-link {
   margin-top: 8px;
   border: none;
@@ -35,9 +54,9 @@ a, .back-to-top-cat, .fa-copy, button
     border-radius: 6px;
     width: 100%;
     text-align: center;
-    display block;
+    display: block;
     border: none;
-    transition: all .3s ease-out;
+    transition: all 0.3s ease-out;
 
     &:hover {
       background-color: rgba($SHION, 0.8);
@@ -59,15 +78,13 @@ a, .back-to-top-cat, .fa-copy, button
   }
 }
 
-
-//侧边栏TOC
+// 侧边栏 TOC
 .post-toc .nav {
-
   padding: 0 10px;
 
   .nav-item:not(.active) {
     display: block;
-    padding 7px;
+    padding: 7px;
   }
 
   .active > a {
@@ -86,7 +103,6 @@ a, .back-to-top-cat, .fa-copy, button
   }
 }
 
-
 .posts-collapse .post-content .post-header:hover {
   border-bottom-color: $SHION;
 }
@@ -95,32 +111,28 @@ a.nav-link {
   border-bottom: none;
 }
 
-//对文章主题的样式修改
+// 文章样式
 .main-inner.post {
-
   // 选中文本样式
-
   ::selection {
-    color #fff;
-    background-color: $SHION
+    color: #fff;
+    background-color: $SHION;
   }
 
   code {
     background-color: #eff6fc;
-    font-family: iosevka,microsoft yahei,monospace;
-    padding: .1em .3em;
-    margin 0 .2em;
+    font-family: iosevka, microsoft yahei, monospace;
+    padding: 0.1em 0.3em;
+    margin: 0 0.2em;
     border-bottom: 2px solid #c7e0f4;
   }
 
   strong {
     background: linear-gradient(transparent 80%, rgba(rgb($SAKURA), 1) 80%);
-    padding 2px 4px;
+    padding: 2px 4px;
   }
 
-
-  //链接
-
+  // 链接
   p > a {
     background: linear-gradient(transparent 80%, rgba(rgb($SAKURA), 0.8) 80%);
     color: var(--link-color);
@@ -133,7 +145,6 @@ a.nav-link {
   }
 
   // 代码块
-
   figure.highlight {
     background: $SHION;
     border-radius: 5px;
@@ -152,7 +163,6 @@ a.nav-link {
   }
 
   // 标签 Github-Card
-
   .github-card {
     display: flex;
     border: 1px solid;
@@ -188,7 +198,7 @@ a.nav-link {
       button {
         color: #fff;
         cursor: pointer;
-        border none;
+        border: none;
         border-radius: 5px;
       }
 
@@ -213,12 +223,9 @@ a.nav-link {
         outline: none;
       }
     }
-
-
   }
 
   // 引用
-
   blockquote {
     border: 0;
     background: #e4ebf6;
@@ -242,8 +249,7 @@ a.nav-link {
     }
   }
 
-  //列表
-
+  // 列表
   ol, ul {
     list-style: none;
     counter-reset: li;
@@ -275,13 +281,13 @@ a.nav-link {
   }
 
   ul li:before {
-    margin: -0.2em 0.5em 0 .45em;
+    margin: -0.2em 0.5em 0 0.45em;
     width: 0.65em;
     height: 0.65em;
-    border: .15em solid $SHION;
+    border: 0.15em solid $SHION;
     border-radius: 1rem;
     background: #fff;
-    content: "";
+    content: '';
     line-height: 2em;
     display: inline-block;
     vertical-align: middle;
@@ -289,12 +295,11 @@ a.nav-link {
   }
 
   // 标题
-
   h2:before {
     top: -4px;
     left: -1rem;
     color: $KOHBAI;
-    content: "##";
+    content: '##';
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 0.85em;
@@ -310,44 +315,43 @@ a.nav-link {
   }
 
   h3:before {
-    content: "[";
+    content: '[';
     margin-right: 5px;
     color: $TSUYUKUSA;
     font-size: 1.125em;
   }
 
   h3:after {
-    content: "]";
+    content: ']';
     margin-left: 5px;
     color: $TSUYUKUSA;
     font-size: 1.125em;
   }
 
-  //底部版权
-
+  // 底部版权
   .post-copyright {
     font-size: 0.875em;
     border-radius: 3px;
     background-color: rgba(rgb($SHION), 0.1);
-    padding 15px 0 15px 15px;
+    padding: 15px 0 15px 15px;
     border-left: 5px solid $KOHBAI;
 
     .post-copyright-bg {
       height: 100%;
       padding-left: 165px;
-      background-image: url("/images/priest.png");
+      background-image: url('/images/priest.png');
       background-size: contain;
-      background-repeat no-repeat;
-      display flex;
+      background-repeat: no-repeat;
+      display: flex;
       flex-flow: column;
       justify-content: center;
 
       @media (min-width: 300px) {
-        min-height 165px;
+        min-height: 165px;
       }
 
       span {
-        word-break keep-all;
+        word-break: keep-all;
       }
     }
 
@@ -356,7 +360,7 @@ a.nav-link {
     }
 
     p {
-      margin 5px;
+      margin: 5px;
     }
 
     p:last-child {
@@ -364,8 +368,7 @@ a.nav-link {
     }
   }
 
-  //表格
-
+  // 表格
   table {
     td[colspan] {
       text-align: center;
@@ -377,8 +380,7 @@ a.nav-link {
   }
 }
 
-
-//chrome滚动条
+// Chrome 滚动条
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -392,20 +394,17 @@ a.nav-link {
   background-color: transparent;
 }
 
-//进度条默认颜色
+// 进度条默认颜色
 .headband {
   background-color: unset;
 }
 
-
-//容器边缘圆滑
-.sidebar-inner, .header-inner, .site-brand-container,
-.main-inner > div.post-block, .comments {
+// 容器边缘圆滑
+.sidebar-inner, .header-inner, .site-brand-container, .main-inner > div.post-block, .comments {
   border-radius: 5px;
 }
 
-
-//首页文章标题过渡
+// 首页文章标题过渡
 .archive .post-header span:hover {
   color: #fff;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, #fb618d), color-stop(40%, #8dc00a), color-stop(70%, #d68fe9));
@@ -424,17 +423,17 @@ a.nav-link {
   }
 }
 
-
-//自定义回到顶部样式
+// 自定义回到顶部样式
 .back-to-top-cat {
   position: fixed;
-  right: 60px;
+  right: 20px;
   top: -900px;
   width: 70px;
   height: 900px;
-  bottom: unset;
   transition: all 0.5s ease-in-out;
-  background: url("/images/scroll.png");
+  background: url('/images/scroll.png');
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
   z-index: 1050;
 
   > i, > span {
@@ -443,19 +442,19 @@ a.nav-link {
 
   &.back-to-top-cat-on {
     bottom: unset;
-    top: 100vh < (900px + 200px) ? calc(100vh - 900px - 200px):0px;
+    top: 100vh < (900px + 200px) ? calc(100vh - 900px - 100px) : 0px;
 
     @media (min-height: 1100px) {
       top: 0;
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1100px) {
       display: none;
     }
   }
 }
 
-//文章 Tag
+// 文章 Tag
 .post-tags {
   margin: 10px 0;
 
@@ -464,7 +463,7 @@ a.nav-link {
   }
 }
 
-//阅读进度条动画
+// 阅读进度条动画
 .reading-progress-bar {
   transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
