@@ -277,33 +277,44 @@ sudo apt-get install libcrypt-ssleay-perl
 dnsbl插件默认是启用的，该插件用于检查发件人的 IP 地址是否在反垃圾邮件数据库（DNSBL）中
 可以在`/etc/haraka/config/plugins`禁用它
 
-设置`smtp.ini.nodes`，这个配置项用于控制 Haraka 启动时创建的 SMTP 进程数量。默认值使用的是 1
-配置在[Performance-Tuning](https://github.com/haraka/Haraka/wiki/Performance-Tuning) 有具体的说明
+设置`smtp.ini.nodes`的参数，这个配置项用于控制 Haraka 启动时创建的 SMTP 进程数量
+默认值使用的是`1`，说明可以在Github的文档内找到：[Performance-Tuning](https://github.com/haraka/Haraka/wiki/Performance-Tuning)
 
-把配置文件里的`nodes=cpus`取消注释
-另外值得注意的是，当使用`nodes=cpus`运行时，将`NodeJs`的环境变量`NODE_CLUSTER_SCHED_POLICY`设置为"none"
-可以显著提高新连接套接字发送`SMTP banner`之前的等待时间
-如果没有这个设置，有时可能需要超过30秒才会发送`SMTP banner`，这会导致许多客户端在此之前断开连接
-使用`systemd`启动`Haraka`的时候，在在 `ExecStart` 行之前添加一个新的行，设置`Environment`指令来定义环境变量
+把配置文件`/etc/haraka/config/smtp.ini`里的**nodes=cpus**取消注释
+
+另外,当使用`nodes=cpus`运行时，将`NodeJs`的环境变量`NODE_CLUSTER_SCHED_POLICY`
+设置为**none**，可以显著提高新连接套接字发送`SMTP banner`之前的等待时间
+
+如果没有这个设置，有时可能需要超过30秒才会发送`SMTP banner`
+这会导致许多客户端在此之前断开连接
+
+使用`systemd`启动`Haraka`的时候，在 `ExecStart` 行之前添加一个新的行
+设置`Environment`指令来定义环境变量
 ```
 Environment=NODE_CLUSTER_SCHED_POLICY=none
 ```
 
 ## Use 587 port
 
-发送电子邮件，建议优先选择使用端口 587，并启用 STARTTLS 加密。
+发送电子邮件，建议优先选择使用端口 587，并启用 **STARTTLS** 加密。
 
-> SMTP（Simple Mail Transfer Protocol）用于电子邮件的传输。25,465,587 是 SMTP 常用端口
+> SMTP（Simple Mail Transfer Protocol）用于电子邮件的传输。 
+> [**25** , **465** , **587**] 是 SMTP 常用端口
+> 　
+> 25 端口 
+> 是默认端口，通常使用非加密通信，所以不建议使用
+> 　
+> 465 端口 
+> 用于通过 SSL/TLS 加密连接发送邮件。但是，使用这个端口的方式已经被弃用，不推荐使用
+> 　
+> 587 端口 
+> SMTP STARTTLS的端口。STARTTLS 是一种在普通的 SMTP 连接上启用加密的方法。请优先选择使用端口 587，并启用 STARTTLS 加密
 
-> 25 端口 是默认端口，通常使用非加密通信，所以不建议使用
-> 465 端口 用于通过 SSL/TLS 加密连接发送邮件。但是，使用这个端口的方式已经被弃用，不推荐使用
-> 587 端口 SMTP STARTTLS的端口。STARTTLS 是一种在普通的 SMTP 连接上启用加密的方法。请优先选择使用端口 587，并启用 STARTTLS 加密
-
-我们修改一下`Haraka`的配置文件`/etc/haraka/config/smtp.ini`
-将第3行监听的端口，改成`listen=[::0]:25,587`
+修改配置文件 `/etc/haraka/config/smtp.ini` 将第3行监听的端口，改成
+```
+listen=[::0]:25,587
+```
 再次使用`swaks`测试一下，加上`--port 587` 参数。可以收到邮件就完美了
-
-## 
 
 ## Create a daemon process 
 
