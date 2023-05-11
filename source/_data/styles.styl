@@ -312,46 +312,6 @@ a, .back-to-top-cat, .fa-copy, button {
       font-size: 1.125em;
     }
 
-    // 底部版权
-    .post-copyright {
-      font-size: 0.875em;
-      border-radius: 3px;
-      background-color: rgba(rgb($SHION), 0.1);
-      padding: 15px 0 15px 15px;
-      border-left: 5px solid $KOHBAI;
-
-      .post-copyright-bg {
-        height: 100%;
-        padding-left: 165px;
-        background-image: url('/images/priest.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-
-        @media (min-width: 300px) {
-          min-height: 165px;
-        }
-
-        span {
-          word-break: keep-all;
-        }
-      }
-
-      .license-name {
-        font-weight: bold;
-      }
-
-      p {
-        margin: 5px;
-      }
-
-      p:last-child {
-        margin-bottom: 0;
-      }
-    }
-
     // 表格
     table {
       td[colspan] {
@@ -423,6 +383,45 @@ a, .back-to-top-cat, .fa-copy, button {
           outline: none;
         }
       }
+    }
+  }
+
+  .post-copyright {
+    font-size: 0.875em;
+    border-radius: 3px;
+    background-color: rgba(rgb($SHION), 0.1);
+    padding: 15px 0 15px 15px;
+    border-left: 5px solid $KOHBAI;
+
+    .post-copyright-bg {
+      height: 100%;
+      padding-left: 165px;
+      background-image: url('/images/priest.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+
+      @media (min-width: 300px) {
+        min-height: 165px;
+      }
+
+      span {
+        word-break: keep-all;
+      }
+    }
+
+    .license-name {
+      font-weight: bold;
+    }
+
+    p {
+      margin: 5px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
     }
   }
 }
