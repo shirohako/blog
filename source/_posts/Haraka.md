@@ -141,7 +141,7 @@ create: /etc/haraka/config/dkim/dkim_key_gen.sh
 
 ### 启动验证插件
 
-先编辑`config/plugins`，把`auth/flat_file`这一行的注释#去掉，启用这个插件
+先编辑`/etc/haraka/config/plugins`，把`auth/flat_file`这一行的注释#去掉，启用这个插件
 
 > flat_file 插件的说明
 > https://haraka.github.io/plugins/auth/flat_file/
@@ -234,7 +234,7 @@ cd ./acme.sh
 
 ### 启用 TLS
 
-在`config/plugins`里把tls前面的#去掉，启用tls插件
+在`/etc/haraka/config/plugins`里把tls前面的#去掉，启用tls插件
 编辑`config/tls.ini`
 
 > Haraka TLS plugin
@@ -262,28 +262,66 @@ cert=/usr/local/nginx/conf/ssl/abyss.moe/fullchain.cer
 -tls
 ```
 
+如果出现`*** TLS not available: requires Net::SSLeay.  Exiting`，请尝试安装下面的包
+```
+sudo apt-get install libnet-ssleay-perl
+sudo apt-get install libcrypt-ssleay-perl
+```
+
 成功的话，还是会返回`250 Message Queued`，检查下邮箱应该会收到
 
 ![](https://ae01.alicdn.com/kf/U1e686a42111e4a728e6d898a5d4f4dddm.jpg)
 
+## Some optimizes
+
+dnsbl插件默认是启用的，该插件用于检查发件人的 IP 地址是否在反垃圾邮件数据库（DNSBL）中
+可以在`/etc/haraka/config/plugins`禁用它
+
+设置`smtp.ini.nodes`，这个配置项用于控制 Haraka 启动时创建的 SMTP 进程数量。默认值使用的是 1
+配置在[Performance-Tuning](https://github.com/haraka/Haraka/wiki/Performance-Tuning) 有具体的说明
+
+把配置文件里的`nodes=cpus`取消注释
+另外值得注意的是，当使用`nodes=cpus`运行时，将`NodeJs`的环境变量`NODE_CLUSTER_SCHED_POLICY`设置为"none"
+可以显著提高新连接套接字发送`SMTP banner`之前的等待时间
+如果没有这个设置，有时可能需要超过30秒才会发送`SMTP banner`，这会导致许多客户端在此之前断开连接
+使用`systemd`启动`Haraka`的时候，在在 `ExecStart` 行之前添加一个新的行，设置`Environment`指令来定义环境变量
+```
+Environment=NODE_CLUSTER_SCHED_POLICY=none
+```
+
+## Use 587 port
+
+发送电子邮件，建议优先选择使用端口 587，并启用 STARTTLS 加密。
+
+> SMTP（Simple Mail Transfer Protocol）用于电子邮件的传输。25,465,587 是 SMTP 常用端口
+
+> 25 端口 是默认端口，通常使用非加密通信，所以不建议使用
+> 465 端口 用于通过 SSL/TLS 加密连接发送邮件。但是，使用这个端口的方式已经被弃用，不推荐使用
+> 587 端口 SMTP STARTTLS的端口。STARTTLS 是一种在普通的 SMTP 连接上启用加密的方法。请优先选择使用端口 587，并启用 STARTTLS 加密
+
+我们修改一下`Haraka`的配置文件`/etc/haraka/config/smtp.ini`
+将第3行监听的端口，改成`listen=[::0]:25,587`
+再次使用`swaks`测试一下，加上`--port 587` 参数。可以收到邮件就完美了
+
+## 
+
 ## Create a daemon process 
 
 可以使用`Systemd`在后台运行
-新建一个文件：`haraka.service`
+新建一个文件：`/etc/systemd/system/haraka.service`
 
-```ini haraka.service
+```ini /etc/systemd/system/haraka.service
 [Unit]
 Description= Haraka Mail Service
 After=network.target
-StartLimitIntervalSec=0
 
 [Service]
 Type=simple
+ExecStart=/usr/bin/haraka -c /etc/haraka
+Environment=NODE_CLUSTER_SCHED_POLICY=none
 User=root
 Group=root
-ExecStart=/usr/bin/haraka -c /etc/haraka
 Restart=always
-LimitNOFILE=512000
 
 [Install]
 WantedBy=multi-user.target
@@ -292,8 +330,7 @@ WantedBy=multi-user.target
 启用该服务
 
 ```shell
-mv haraka.service /etc/systemd/system
-systemctl enable haraka && systemctl start haraka
+systemctl enable haraka --now
 ```
 
 > 参考过的一些文章
