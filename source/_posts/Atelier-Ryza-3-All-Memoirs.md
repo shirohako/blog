@@ -532,9 +532,9 @@ categories: [Game]
 一般任務：**讓人類世界的花朵綻開**
 
 ### 79 某戰士的檄文 (ある戦士の激励文)
-![](https://i.psray.net/i/2023/03/29/6423a8a8e41f6.jpg)
-![](https://i.psray.net/i/2023/03/29/6423a8a94e733.jpg)
-
-### 80 奏波流傳的童謠  (奏波に伝わるわらべ歌)
 ![](https://i.psray.net/i/2023/03/29/6423a92abeea0.jpg)
 ![](https://i.psray.net/i/2023/03/29/6423a92a79a41.jpg)
+
+### 80 奏波流傳的童謠  (奏波に伝わるわらべ歌)
+![](https://i.psray.net/i/2023/03/29/6423a8a8e41f6.jpg)
+![](https://i.psray.net/i/2023/03/29/6423a8a94e733.jpg)
