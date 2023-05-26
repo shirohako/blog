@@ -138,7 +138,7 @@ cd mailcow-dockerized
 
 ### 初始化 mailcow
 输入 mail servers hostname (FQDN), 例如`mail.psray.net`
-谁知 Timezone (时区), 例如`Asia/Tokyo`
+设置 Timezone (时区), 例如`Asia/Tokyo`
 最后的 Available Branches, 选`1`就行, `nightly branch`是开发版本
 
 ```
@@ -171,10 +171,12 @@ docker compose up -d
 
 ![](https://i.psray.net/i/2022/11/11/636d44c48efda.png)
 
-默认生成的证书大概率不对, 证书文件在安装目录下的 `data/assets/ssl/`
-用已有的替换它, 或用acme生成新的, 并重启执行`docker compose up -d`即可
+默认生成的证书文件在安装目录下的 `data/assets/ssl/`
+用已有的替换它或者用acme生成新的证书后, 再重新执行`docker compose up -d`即可
+像我打算用`Nginx`反向代理, 上面证书可以不用管了。这边贴出`Nginx`配置文件中比较重要部分
 
-我打算使用`Nginx`反向代理, 上面证书就可以不用管了, 这边贴出`Nginx`配置文件比较重要部分
+------------
+
 `server_name`记得加上`autoconfig,autodiscover`, `MAILCOW_HOSTNAME`替换成你的邮件服务器域名
 记得把`proxy_pass`的端口改成的`mailcow`的`http`端口
 [官方文档](https://docs.mailcow.email/post_installation/firststeps-rp/)内还有更多示例和说明, 比如`Apache`,`HAProxy`,`Traefik `,`Caddy`的配置
