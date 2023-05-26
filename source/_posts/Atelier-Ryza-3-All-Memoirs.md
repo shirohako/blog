@@ -5,8 +5,6 @@ tags: [Kouryaku]
 categories: [Game]
 ---
 
-# Overview
-
 - 「ライザのアトリエ3」旅人の見聞録の場所・入手方法一覧
 - 「萊莎的煉金工房3」全部見聞録地點・獲得方法一覧
 
@@ -203,8 +201,6 @@ categories: [Game]
 </tbody>
 </table>
 
-
-# All Memoirs 
 
 ## Map 1
 
