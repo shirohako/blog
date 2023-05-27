@@ -8,8 +8,8 @@
 
 ```
 npm install -g hexo-cli
-git clone https://github.com/shirohako/blog && cd blog
-npm i
+git clone --recurse-submodules https://github.com/shirohako/blog 
+cd blog && npm i
 ```
 
 ## Configuration
