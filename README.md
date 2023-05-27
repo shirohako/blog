@@ -32,5 +32,5 @@ hexo s
 ## Pull Next Theme Commits
 
 ```
-git subtree pull --prefix=themes/next https://github.com/next-theme/hexo-theme-next master --squash
+git submodule update --remote themes/next
 ```
