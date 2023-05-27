@@ -3,3 +3,20 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const backToTopCat = document.querySelector('.back-to-top-cat');
+        window.addEventListener('scroll', () => {
+            if (backToTopCat) {
+                const contentHeight = document.body.scrollHeight - window.innerHeight;
+                const scrollPercent = contentHeight > 0
+                    ? Math.min(100 * window.scrollY / contentHeight, 100)
+                    : 0;
+                backToTopCat.classList.toggle('back-to-top-cat-on', Math.round(scrollPercent) >= 5);
+            }
+        }, {passive: true});
+        backToTopCat && backToTopCat.addEventListener('click', () => {
+            window.anime({targets: document.scrollingElement, duration: 500, easing: 'linear', scrollTop: 0});
+        });
+    });
+</script>

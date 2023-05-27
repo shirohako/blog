@@ -172,7 +172,6 @@ NexT.utils = {
 
   registerScrollPercent: function() {
     const backToTop = document.querySelector('.back-to-top');
-    const backToTopCat = document.querySelector('.back-to-top-cat'); //自定义的回到底部
     const readingProgressBar = document.querySelector('.reading-progress-bar');
     // For init back to top in sidebar if page was scrolled after page refresh.
 
@@ -187,23 +186,12 @@ NexT.utils = {
         if (readingProgressBar) {
           readingProgressBar.style.setProperty('--progress', scrollPercent.toFixed(2) + '%');
         }
-        if (backToTopCat) { //自定义的回到底部
-          backToTopCat.classList.toggle('back-to-top-cat-on', Math.round(scrollPercent) >= 5);
-        }
+
       }
       this.updateActiveNav();
     }, { passive: true });
 
     backToTop && backToTop.addEventListener('click', () => {
-      window.anime({
-        targets  : document.scrollingElement,
-        duration : 500,
-        easing   : 'linear',
-        scrollTop: 0
-      });
-    });
-
-    backToTopCat && backToTopCat.addEventListener('click', () => { //自定义的回到底部
       window.anime({
         targets  : document.scrollingElement,
         duration : 500,
