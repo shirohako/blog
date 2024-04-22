@@ -125,7 +125,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: https://cdn.jsdelivr.net/gh/shirohako/helm@latest/avatar.jpg
+  url: https://i.psray.net/i/2024/04/21/6624dd2e9a5c4.jpg
   # If true, the avatar will be dispalyed in circle.
   rounded: true
   # If true, the avatar will be rotated with the cursor.
@@ -975,4 +975,4 @@ js: js
 images: images
 
 open_graph_protocol:
-  image: https://cdn.jsdelivr.net/gh/shirohako/helm@latest/avatar.jpg
+  image: https://i.psray.net/i/2024/04/21/6624dd2e9a5c4.jpg
