@@ -95,8 +95,8 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include:
-exclude:
+# include:
+# exclude:
 ignore:
 
 # Extensions
@@ -139,3 +139,6 @@ feed:
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+marked:
+  smartypants: false
