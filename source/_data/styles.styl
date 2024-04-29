@@ -424,6 +424,190 @@ a, .back-to-top-cat, .fa-copy, button {
       margin-bottom: 0;
     }
   }
+
+  // FELT Liner Note
+  .liner-note-block {
+    background-color: rgba(163, 216, 255, 0.2);
+    padding: 20px 40px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+
+    .liner-note-name {
+      font-weight: bold;
+      font-size: 22px;
+      margin: 10px 0 20px 0;
+
+      mark {
+        font-size: 0.7rem;
+        padding: 4px 6px;
+        margin: 0 3px;
+        border-radius: 7px;
+        vertical-align: middle;
+        background-color: rgba(255, 255, 255, 0.9);
+        border: 2px solid;
+        color: rgba(96, 96, 96, 0.982);
+        user-select: none;
+      }
+    }
+
+    .note-original-text {
+    }
+
+    .note-teanslated-text {
+      margin-top: 20px;
+    }
+  }
+
+  .note-block-color-mzc {
+    background-color: rgba(163, 186, 255, 0.15);
+  }
+
+  .note-block-color-maika {
+    background-color: rgba(255, 163, 232, 0.1);
+  }
+
+  .note-block-color-mika {
+    background-color: rgba(137, 238, 252, 0.15);
+  }
+
+  .note-block-color-vivi {
+    background-color: rgba(211, 231, 127, 0.2);
+  }
+
+  .note-block-color-renko {
+    background-color: rgba(50, 59, 14, 0.08);
+  }
+
+  .note-block-color-ao {
+    background-color: rgba(215, 65, 65, 0.08);
+  }
+
+  // License 和 FELT Album Deatil 样式
+  .liner-note-album-detail, .license-block {
+    background: #f4f4f4;
+    border: 2px solid #222;
+    border-radius: 4px;
+    display: flex;
+    padding: 30px 25px 25px;
+    font-size: 0.85rem;
+    position: relative;
+    margin: 35px 0 20px;
+
+    .note-wrap {
+      position: absolute;
+      top: -17.5px;
+      left: 22px;
+      transform: skewX(-30deg);
+      border: 2px solid #222;
+      background: #fff;
+      padding: 2px 20px;
+
+      p {
+        margin: 0;
+        display: inline-block;
+        font-size: 1rem;
+        font-weight: bold;
+        transform: skewX(30deg);
+      }
+    }
+
+    .note-album-img {
+      width: 96px;
+      margin-right: 20px;
+      background-image: url('https://i.psray.net/i/2024/04/29/662f0b7936426.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .license-img {
+      width: 96px;
+      margin-right: 40px;
+      margin-top: 20px;
+      background-image: url('https://i.psray.net/i/2024/04/29/662f3c1a4b337.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .note-album-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    // 更新时间 Icon
+    .note-album-date {
+      i::before {
+        font: var(--fa-font-solid);
+        content: '\f017';
+      }
+
+      b:first-of-type {
+        background-image: linear-gradient(to right, rgba(113, 113, 226, 0.15) 0%, rgba(113, 113, 226, 0.87) 100%);
+        background-size: 100% 15%;
+        background-repeat: no-repeat;
+        background-position: left 80%;
+      }
+    }
+
+    .underline {
+      background-image: linear-gradient(to right, rgba(113, 113, 226, 0.3) 0%, rgba(113, 113, 226, 0.5) 100%);
+      background-size: 100% 15%;
+      background-repeat: no-repeat;
+      background-position: left 80%;
+    }
+
+    .attribution {
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 2rem;
+
+      i {
+        width: 16px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 0.7rem;
+        margin-right: 3px;
+      }
+    }
+
+    .license-name {
+      border-top: 1px dashed;
+      margin-top: 5px;
+      padding-top: 5px;
+    }
+
+    .note-album-links {
+      display: flex;
+      gap: 5px;
+      margin-right: 3px;
+
+      i {
+        font-size: 0.7rem;
+      }
+
+      div {
+        margin-right: 5px;
+      }
+
+      // THBWiki Icon
+      .note-album-link-thbwiki>i::before {
+        font: var(--fa-font-solid);
+        content: '\f1c0';
+      }
+
+      // VGMdb Icon
+      .note-album-link-vgmdb>i::before {
+        font: var(--fa-font-solid);
+        content: '\f02d';
+      }
+
+      // Home Page Icon
+      .note-album-link-hp>i::before {
+        font: var(--fa-font-solid);
+        content: '\f015';
+      }
+    }
+  }
 }
 
 // Chrome 滚动条
