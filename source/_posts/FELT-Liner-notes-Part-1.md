@@ -1,5 +1,5 @@
 ---
-title: FELT Liner Note 中文翻译 (Part I)
+title: FELT Liner Notes 中文翻译 (Part I)
 date: 2024-04-23 10:15:00
 tags:
 ---
