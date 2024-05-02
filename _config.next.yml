@@ -380,7 +380,7 @@ reading_progress:
   enable: true
   # Available values: top | bottom
   position: top
-  color: "#f2a0a1"
+  color: "#8f77b5"
   height: 3px
 
 # Bookmark Support

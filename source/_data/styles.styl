@@ -388,7 +388,7 @@ a, .back-to-top-cat, .fa-copy, button {
 
   .post-copyright {
     font-size: 0.875em;
-    border-radius: 3px;
+    border-radius: 5px;
     background-color: rgba(rgb($SHION), 0.1);
     padding: 15px 0 15px 15px;
     border-left: 5px solid $KOHBAI;
@@ -402,6 +402,7 @@ a, .back-to-top-cat, .fa-copy, button {
       display: flex;
       flex-flow: column;
       justify-content: center;
+      font-size: 1rem;
 
       @media (min-width: 300px) {
         min-height: 165px;
@@ -409,6 +410,16 @@ a, .back-to-top-cat, .fa-copy, button {
 
       span {
         word-break: keep-all;
+      }
+
+      .post-copyright-uta {
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+
+      .post-copyright-highlight {
+        color: #8f77b5;
+        font-weight: bold;
       }
     }
 
