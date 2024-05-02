@@ -118,7 +118,6 @@ NAGI師のフォースに導かれFELTに参加したものの、酒ばかり飲
 </div>
 <div class="note-teanslated-text">
 「Sky Gate」这是我第一次以FELT舞花的身份参与制作。如今回顾起来，觉得是「与FELT相互契合的清新曲目」，哪怕到了今天也依然很好听，令人忍不住想要自卖自夸一番。果然从这个时候开始，NAGI桑就已经才华横溢了。
-11年的FELT生涯就此迈出了第一步。
 </div>
 
 <!-- liner-note-block END -->
