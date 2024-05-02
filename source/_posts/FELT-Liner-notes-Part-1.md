@@ -1051,7 +1051,7 @@ Call Onは、曲を聞いた時なぜか夕陽が思い浮かびました。優�
      </div>
     </div>
     <div class="note-album-descript-jp">
-    君へ 溢れる思い　一つは伝わるかな
+    君へ 溢れる思いの 一つは伝わるかな。
     </div>
     <div class="note-album-descript-zh">
     这份满溢的心绪，是否有些许传递给你。
@@ -1177,10 +1177,10 @@ Renko
      </div>
     </div>
     <div class="note-album-descript-jp">
-    突き刺さる この想い。
+    突き刺さる この想い
     </div>
     <div class="note-album-descript-zh">
-    这份感情，深入心灵。
+    这份感情 深入心灵
     </div>
     </div>
 </div>
