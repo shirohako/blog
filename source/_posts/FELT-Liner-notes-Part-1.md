@@ -884,7 +884,7 @@ Vivienne
 <!-- liner-note-block START -->
 
 <div class="liner-note-name">
-Renko [Lyrics]
+Renko
 <mark>Lyrics</mark> 
 </div>
     
