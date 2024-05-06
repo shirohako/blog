@@ -3,6 +3,7 @@ title: 「莱莎的炼金工房2」白金流程笔记
 date: 2020-12-06 21:48:04
 tags: [Kouryaku]
 categories: [Game]
+description: RPG游戏「萊莎的煉金工房2」的流程记录。
 ---
 
 ## 前言

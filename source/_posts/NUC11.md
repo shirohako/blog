@@ -1,7 +1,9 @@
 ---
 title: NUC11 简单开箱
 date: 2021-06-07 11:48:32
+tags: [NUC,NimiPC]
 categories: [Unboxing]
+description: Intel NUC 产品的一次开箱体验，年轻人第一台便携式 Mini PC的一次体验。内部接口插槽一览，安装 Windows 跑分和 Linux 使用体验。
 ---
 
 ## 前言

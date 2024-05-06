@@ -3,6 +3,7 @@ title: 「祭物与雪之刹那」白金流程笔记
 date: 2020-11-24 02:11:50
 tags: [Kouryaku]
 categories: [Game]
+description: RPG「祭物与雪之刹那」的流程攻略，主线流程图文指引，白金收尾要素等提醒和小建议。
 ---
 
 ![00](https://img.xiami.net/images/common/uploadpic/46/16061621461218.jpg)

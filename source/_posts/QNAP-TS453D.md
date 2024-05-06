@@ -3,6 +3,7 @@ title: QNAP TS-453D 开箱和简单上手
 date: 2021-01-16 20:27:49
 tags: [NAS,QNAP]
 categories: [Unboxing]
+description: 年轻人第一台QNAP NAS设备的开箱，还有简单的上手体验。QTS系统的上手、配置的流程的简单窥探。
 ---
 
 ## 前言

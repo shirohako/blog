@@ -1,9 +1,9 @@
 ---
 title: 使用 Umami 自建 Web Analytics 平台
 date: 2021-04-09 09:03:16
-tags: [web]
+tags: [Umami]
 categories: [Memo]
-description: 自建 Web Analytics 工具的记录
+description: 使用 Umami 自己托管一个 Web Analytics 的一次尝试。防止 Google 和 Bing 等主流的统计工具被 Adblock 和 AdGurad 等工具屏蔽。
 ---
 
 
@@ -12,6 +12,8 @@ description: 自建 Web Analytics 工具的记录
 Umami 是一个简单的网站统计工具，可以代替 Google Analytics
 使用nodejs编写，需要配合 MySQL 或 Postgresql
 使用起来很简单，比起 Google Analytics 比较直观，对SPA单页应用也支持不错
+
+考虑到 Google 的官方统计工具容易被广告插件屏蔽，所以今后还是选择了自己托管
 
 {% github /mikecao/umami,https://app.umami.is/share/8rmHaheU/umami.is  %}
 Umami is a simple, fast, website analytics alternative to Google Analytics.

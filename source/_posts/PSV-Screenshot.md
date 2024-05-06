@@ -1,8 +1,9 @@
 ---
 title: 使用 TrophyShot 让 PSVita 在获取奖杯时自动截图
 date: 2020-10-16 17:19:38
-tags: [PSV]
+tags: [PSV,PSN]
 categories: [Memo]
+description: 让手上的PSVita通过插件的方式，像PS5一样，能够在获得奖杯(Trophy)的时候，自动截图并保存。
 ---
 
 ## 闲聊 PSN和奖杯

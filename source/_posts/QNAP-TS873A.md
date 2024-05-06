@@ -1,8 +1,9 @@
 ---
 title: QNAP TS-873A 开箱和简单上手
 date: 2021-11-07 19:17:17
-tags: [QNAP,NAS]
+tags: [NAS,QNAP]
 categories: [Unboxing]
+description: 面向中高消费级的 QNAP NAS 设备 TS-873A 的开箱，还有简单的上手体验。QTS系统的上手、配置的流程的简单窥探。
 ---
 
 

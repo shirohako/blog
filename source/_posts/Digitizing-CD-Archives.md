@@ -1,8 +1,8 @@
 ---
-title: 将实体CD转换成档案、规范的使用EAC/XLD
+title: 将实体CD转换成数字音频档案、规范的使用EAC/XLD
 date: 2021-03-25 17:26:46
 categories: [Memo]
-description: 一个强迫症的音频抓取软件设置指北
+description: 一个强迫症的音频抓取软件设置指北。记录了安装 Exact Audio Copy 后，必要的初始化设置，根据自己的光驱对应优化，标准化日志输出，远离爆发模式抓取，提取完美的音轨。
 ---
 
 ## 前言

@@ -2,6 +2,8 @@
 title: Reset Oracle Cloud VM Login SSH Key
 date: 2022-11-07 01:51:10
 tags: [Oracle]
+categories: [Memo]
+description: Oracle OCI在忘记SSH秘钥或密码的时候，通过挂载硬盘的方式，重新上传公钥并恢复登录的一次笔记。
 ---
 
 之前由于 Oracle 的 ARM 机器实在是太难开了，使用了个脚本配合 Oracle API 来创建新机器

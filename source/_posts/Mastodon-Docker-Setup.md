@@ -1,7 +1,9 @@
 ---
 title: 用 Docker 搭建 Mastodon 实例
 date: 2023-12-02 17:21:12
-tags: Mastodon, Web
+tags: [Mastodon]
+categories: [Memo]
+description: 去中心的社交平台的一次体验，自己搭建一个单人 Mastodon(长毛象) 的流程记录。
 ---
 
 ## 转移到 ActivityPub

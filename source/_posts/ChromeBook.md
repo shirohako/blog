@@ -1,8 +1,9 @@
 ---
 title: 在 Chromebook 上安装 Windows 10
 date: 2021-05-17 03:27:43
+tags: [Chromebook]
 categories: [Memo]
-description: Chromebook的折腾记录
+description: 闲置二手 Chromebook 的折腾记录。在 Dell Chromebook 13 7310 上刷UEFI固件，以及如何安装 Windows 和 触摸板(Touchpad) 驱动 的一次记录。
 ---
 
 
@@ -22,7 +23,6 @@ description: Chromebook的折腾记录
 查了下国外有大佬做了 Custom UEFI firmware，所以刷个 Windows 或 Linux 都是没问题的
 最后决定入手一台 Chromebook 来折腾 Arch Linux
 
-
 最终选择的型号还是：Dell Chromebook 13 7310
 
 ![](https://ae01.alicdn.com/kf/H06c955013add4a8795b238eca4980e55t.jpg)
@@ -34,16 +34,16 @@ description: Chromebook的折腾记录
 
 具体参数：
 
-|  Name  |  Results  |
-| ---- | ---- |
-|  Display  |  270 nits	/ 96 percent sRGB / Delta e = 1.4 |
-|  Display Size |  13.30-inch  |
-|  Display Resolution |  1920x1080 pixels  |
-|  Processor |  Intel Celeron Dual Core 3205U  |
-|  Base Clock Speed	 |  1.5 GHz  |
-|  RAM |  4 GB  |
-|  SSD  |  16GB  |
-|  Weight  |  1.469639 kg  |
+| Name               | Results                                    |
+| ------------------ | ------------------------------------------ |
+| Display            | 270 nits	/ 96 percent sRGB / Delta e = 1.4 |
+| Display Size       | 13.30-inch                                 |
+| Display Resolution | 1920x1080 pixels                           |
+| Processor          | Intel Celeron Dual Core 3205U              |
+| Base Clock Speed   | 1.5 GHz                                    |
+| RAM                | 4 GB                                       |
+| SSD                | 16GB                                       |
+| Weight             | 1.469639 kg                                |
 
 当然还有高配的版本，不过价格也上去了。这个配置姑且满足了
 实际用起来，屏幕素质还是挺满意的。CPU 性能放到今天来用、还是差了点意思
@@ -52,7 +52,6 @@ description: Chromebook的折腾记录
 ![](https://ae01.alicdn.com/kf/H359943483b904851a2c28c9b86b2a28bj.jpg)
 
 这篇文章主要记录下 Chromebook 如何刷机
-至于 Arch 的安装细节，我会单独写篇文章
 
 ## 为 ChromeBook 安装 UEFI firmware
 

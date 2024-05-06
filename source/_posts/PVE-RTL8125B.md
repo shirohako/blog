@@ -1,7 +1,8 @@
 ---
 title: 为 PVE 安装 RTL8125B 2.5G网卡驱动
 date: 2021-10-16 11:29:16
-tags:
+tags: [PVE]
+categories: [Memo]
 ---
 
 ## Prologue

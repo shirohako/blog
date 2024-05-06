@@ -1,7 +1,8 @@
 ---
 title: 从 Proxmox VE 迁移到 ESXI/VMware Workstation
 date: 2022-03-21 19:24:52
-tags:
+categories: [Memo]
+description: 尝试更换虚拟化平台，将 PVE 的虚拟硬盘文件转换成 ESXI 可以使用的文件，迁移并挂载的一次笔记。
 ---
 
 
