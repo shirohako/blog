@@ -43,6 +43,9 @@ description: 同人音乐社团 FELT Music 发行的单行本 Liner Notes 的日
       <b>2010-09-19</b> 
       <b>(博麗神社例大祭SP1)</b>
     </div>
+    <div class="note-album-characters"><i></i>
+      Characters: 射命丸文
+    </div>
     <div class="note-album-links">
      <div class="note-album-link-thbwiki"><i></i>
        <a href="https://thwiki.cc/Milky_Wink">THBWiki</a>
@@ -161,6 +164,9 @@ Vivienne
       Release Date:
       <b>2010-12-30</b> 
       <b>(Comic Market 79)</b>
+    </div>
+    <div class="note-album-characters"><i></i>
+      Characters: 爱丽丝·玛格特洛依德 (アリス・マーガトロイド)
     </div>
     <div class="note-album-links">
      <div class="note-album-link-thbwiki"><i></i>
@@ -288,6 +294,9 @@ NAGI桑看了我发在PIXIV上的人物与花卉的作品并与我取得联系�
       Release Date:
       <b>2011-03-13</b> 
       <b>(第8回 博麗神社例大祭)</b>
+    </div>
+    <div class="note-album-characters"><i></i>
+      Characters: 西行寺幽幽子 (西行寺幽々子)
     </div>
     <div class="note-album-links">
      <div class="note-album-link-thbwiki"><i></i>
@@ -417,6 +426,9 @@ AO
       <b>2011-08-13</b> 
       <b>(Comic Market 80)</b>
     </div>
+    <div class="note-album-characters"><i></i>
+      Characters: 东风谷早苗 (東風谷早苗)
+    </div>
     <div class="note-album-links">
      <div class="note-album-link-thbwiki"><i></i>
        <a href="https://thwiki.cc/Blue_Drop">THBWiki</a>
@@ -544,6 +556,9 @@ And Otherは、空の上から街を見下ろして歌っているような、�
       <b>2011-09-11</b> 
       <b>(博麗神社例大祭SP2)</b>
     </div>
+    <div class="note-album-characters"><i></i>
+      Characters: 十六夜咲夜
+    </div>
     <div class="note-album-links">
      <div class="note-album-link-thbwiki"><i></i>
        <a href="https://thwiki.cc/Rebirth_Story">THBWiki</a>
@@ -666,6 +681,9 @@ AO
       Release Date:
       <b>2011-12-30</b> 
       <b>(Comic Market 81)</b>
+    </div>
+    <div class="note-album-characters"><i></i>
+      Characters: 上白泽慧音 (上白沢慧音)
     </div>
     <div class="note-album-links">
      <div class="note-album-link-thbwiki"><i></i>
@@ -794,6 +812,9 @@ Renko
       <b>2012-05-27</b> 
       <b>(第9回 博麗神社例大祭)</b>
     </div>
+    <div class="note-album-characters"><i></i>
+      Characters: 古明地觉 (古明地さとり)
+    </div>
     <div class="note-album-links">
      <div class="note-album-link-thbwiki"><i></i>
        <a href="https://thwiki.cc/Stand_Up">THBWiki</a>
@@ -919,6 +940,9 @@ Renko
       <b>2012-08-11</b> 
       <b>(Comic Market 82)</b>
     </div>
+    <div class="note-album-characters"><i></i>
+      Characters: 博丽灵梦 (博麗霊夢)
+    </div>
     <div class="note-album-links">
      <div class="note-album-link-thbwiki"><i></i>
        <a href="https://thwiki.cc/Little_Planet">THBWiki</a>
@@ -1040,6 +1064,9 @@ Call Onは、曲を聞いた時なぜか夕陽が思い浮かびました。優�
       Release Date:
       <b>2012-12-30</b> 
       <b>(Comic Market 83)</b>
+    </div>
+    <div class="note-album-characters"><i></i>
+      Characters: 琪露诺 (チルノ)
     </div>
     <div class="note-album-links">
      <div class="note-album-link-thbwiki"><i></i>
@@ -1166,6 +1193,9 @@ Renko
       Release Date:
       <b>2013-05-26</b> 
       <b>(第10回 博麗神社例大祭)</b>
+    </div>
+    <div class="note-album-characters"><i></i>
+      Characters: 铃仙·优昙华院·因幡 (鈴仙・優曇華院・イナバ)
     </div>
     <div class="note-album-links">
      <div class="note-album-link-thbwiki"><i></i>

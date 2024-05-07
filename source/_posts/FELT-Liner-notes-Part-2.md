@@ -41,6 +41,9 @@ tags:
       <b>2013-08-12</b> 
       <b>(Comic Market 84)</b>
     </div>
+    <div class="note-album-characters"><i></i>
+      Characters: 霊烏路空 (灵乌路空)
+    </div>
     <div class="note-album-links">
      <div class="note-album-link-thbwiki"><i></i>
        <a href="https://thwiki.cc/index.php?oldid=388781">THBWiki</a>
@@ -166,6 +169,9 @@ Vivienne
       <b>2013-12-30</b> 
       <b>(Comic Market 85)</b>
     </div>
+    <div class="note-album-characters"><i></i>
+      Characters: 风见幽香 (風見幽香)
+    </div>
     <div class="note-album-links">
      <div class="note-album-link-thbwiki"><i></i>
        <a href="https://thwiki.cc/Grow_Color">THBWiki</a>
@@ -289,6 +295,9 @@ Renko
       Release Date:
       <b>2014-05-11</b> 
       <b>(第11回 博麗神社例大祭)</b>
+    </div>
+    <div class="note-album-characters"><i></i>
+      Characters: 雾雨魔理沙 (霧雨魔理沙)
     </div>
     <div class="note-album-links">
      <div class="note-album-link-thbwiki"><i></i>
@@ -420,6 +429,9 @@ FELT的曲子真的都既好听又富有气质，绘制封面的时候，我总�
       <b>2014-08-16</b> 
       <b>(Comic Market 86)</b>
     </div>
+    <div class="note-album-characters"><i></i>
+      Characters: 键山雏 (鍵山雛)
+    </div>
     <div class="note-album-links">
      <div class="note-album-link-thbwiki"><i></i>
        <a href="https://thwiki.cc/Fortunes_Gate">THBWiki</a>
@@ -549,6 +561,9 @@ Eris
       <b>2014-12-29</b> 
       <b>(Comic Market 87)</b>
     </div>
+    <div class="note-album-characters"><i></i>
+      Characters: 蕾蒂·霍瓦特洛克 (レティ・ホワイトロック)
+    </div>
     <div class="note-album-links">
       <div class="note-album-link-thbwiki"><i></i>
        <a href="https://thwiki.cc/index.php?oldid=556682">THBWiki</a>
@@ -673,6 +688,9 @@ Renko
       Release Date:
       <b>2015-05-10</b> 
       <b>(第12回 博麗神社例大祭)</b>
+    </div>
+    <div class="note-album-characters"><i></i>
+      Characters: 赤蛮奇
     </div>
     <div class="note-album-links">
      <div class="note-album-link-thbwiki"><i></i>
@@ -799,6 +817,9 @@ overlowは、差し込む朝日に目が覚めるような⋯まだ眠ってい�
       <b>2015-08-14</b> 
       <b>(Comic Market 88)</b>
     </div>
+    <div class="note-album-characters"><i></i>
+      Characters: 八云紫 (八雲紫)
+    </div>
     <div class="note-album-links">
      <div class="note-album-link-thbwiki"><i></i>
        <a href="https://thwiki.cc/World_Trick">THBWiki</a>
@@ -923,6 +944,9 @@ Remix名当中的「La pousse」嘛，大概是萌芽的意思。记得当时我
       <b>2015-12-30</b> 
       <b>(Comic Market 89)</b>
     </div>
+    <div class="note-album-characters"><i></i>
+      Characters: 冈崎梦美 (岡崎夢美)
+    </div>
     <div class="note-album-links">
      <div class="note-album-link-thbwiki"><i></i>
        <a href="https://thwiki.cc/Spatial_Moving">THBWiki</a>
@@ -1046,6 +1070,9 @@ Let's have a good time~♪
       Release Date:
       <b>2016-05-08</b> 
       <b>(第13回 博麗神社例大祭)</b>
+    </div>
+    <div class="note-album-characters"><i></i>
+      Characters: 秦心 (秦こころ)
     </div>
     <div class="note-album-links">
      <div class="note-album-link-thbwiki"><i></i>
@@ -1175,6 +1202,9 @@ AO
       Release Date:
       <b>2016-08-13</b> 
       <b>(Comic Market 90)</b>
+    </div>
+    <div class="note-album-characters"><i></i>
+      Characters: 铃仙·优昙华院·因幡 (鈴仙・優曇華院・イナバ)
     </div>
     <div class="note-album-links">
      <div class="note-album-link-thbwiki"><i></i>
