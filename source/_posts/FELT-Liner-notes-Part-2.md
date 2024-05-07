@@ -1,9 +1,10 @@
 ---
 title: FELT Liner Notes 中文翻译 (Part II)
 date: 2024-05-05 20:02:00
-tags:
+tags: [FELT]
+categories: [Translate]
+description: 同人音乐社团 FELT Music 发行的单行本 Liner Notes 的日本文本以及对应的简体中文译文。
 ---
-
 
 <div class="license-block">
     <div class="note-wrap"><p>创作协议</p></div>
