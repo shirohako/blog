@@ -3,7 +3,7 @@ title: 使用 Mailcow 搭建自己的域名邮箱
 date: 2022-11-09 00:12:42
 tags: [Mail]
 categories: [Memo]
-description: 使用 Mailcow 自建 SMTP/IMAP 邮件服务的一次尝试。从选择服务器的事情准备，到Docker全套安装过程，以及简单的使用体验。并正确的配置域名DNS，让邮件不进入垃圾箱。
+description: 使用 Mailcow 自建 SMTP/IMAP 邮件服务的一次尝试。从准备工作到用 Docker 安装的过程记录，以及简单的使用体验。最后正确的配置域名DNS，让邮件不进入垃圾箱。
 ---
 
 

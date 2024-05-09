@@ -3,7 +3,7 @@ title: 使用 Haraka 搭建 SMTP 邮件服务
 date: 2021-04-02 00:19:21
 tags: [Mail]
 categories: [Memo]
-description: 使用 Haraka 自建 SMTP 邮件服务的一次尝试。告别传统邮件服务商，自己托管发件服务器，实现发件数量自由。并正确配置域名信息，让邮件能正常投递。
+description: 使用 Haraka 自建 SMTP 邮件服务的一次尝试。自己托管发件服务器，告别邮件服务商实现发件数量自由。正确配置域名信息，让邮件能正常投递。
 ---
 
 ## Prologue
