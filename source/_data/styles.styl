@@ -464,17 +464,18 @@ a, .back-to-top-cat, .fa-copy, button {
     }
 
     .note-original-text {
+      margin: 0;
     }
 
     .note-teanslated-text {
       border-top: 0.2px solid rgba(218, 213, 213, 0.776);
-      margin-top: 15px;
+      margin: 15px 0 0 0;
       padding-top: 15px;
     }
   }
 
   .note-block-color-mzc {
-    background-color: rgba(163, 186, 255, 0.15);
+    background-color: rgba(163, 186, 255, 0.25);
   }
 
   .note-block-color-maika {
@@ -486,7 +487,7 @@ a, .back-to-top-cat, .fa-copy, button {
   }
 
   .note-block-color-vivi {
-    background-color: rgba(211, 231, 127, 0.25);
+    background-color: rgba(252, 251, 0, 0.15);
   }
 
   .note-block-color-renko {
@@ -498,7 +499,11 @@ a, .back-to-top-cat, .fa-copy, button {
   }
 
   .note-block-color-eris {
-    background-color: rgba(110, 18, 84, 0.063);
+    background-color: rgba(120, 50, 153, 0.09);
+  }
+
+  .note-block-color-kurumi {
+    background-color: rgba(50, 153, 59, 0.15);
   }
 
   // License 和 FELT Album Deatil 样式
@@ -638,6 +643,16 @@ a, .back-to-top-cat, .fa-copy, button {
       }
     }
   }
+
+  .liner-note-block-thanks {
+    text-align: right;
+    font-size: 1.35rem;
+
+    p:first-of-type {
+      padding-right: 0.65rem;
+      font-weight: 600;
+    }
+  }
 }
 
 // Chrome 滚动条
@@ -721,4 +736,12 @@ a, .back-to-top-cat, .fa-copy, button {
 // 阅读进度条动画
 .reading-progress-bar {
   transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// 减少动画等待时间
+.main {
+  .animated {
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+  }
 }
