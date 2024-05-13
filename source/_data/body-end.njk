@@ -12,7 +12,9 @@
                 const scrollPercent = contentHeight > 0
                     ? Math.min(100 * window.scrollY / contentHeight, 100)
                     : 0;
-                backToTopCat.classList.toggle('back-to-top-cat-on', Math.round(scrollPercent) >= 5);
+                backToTopCat
+                    .classList
+                    .toggle('back-to-top-cat-on', Math.round(scrollPercent) >= 5);
             }
         }, {passive: true});
         backToTopCat && backToTopCat.addEventListener('click', () => {
@@ -22,23 +24,32 @@
 </script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        if (!document.getElementById('comments')) {
-            const newElement = document.createElement('div');
-            newElement.id = 'comments';
-            newElement.classList = 'animated comments comments-block fadeIn';
-            // 在 .post-block 后面插入新元素
-            const postBlock = document.querySelector('.post-block');
-            postBlock.parentNode.insertBefore(newElement, postBlock.nextSibling);
-            // 标题
-            const commentsTitleDiv = document.createElement('div');
-            commentsTitleDiv.classList = 'comments-block-title';
-            commentsTitleDiv.innerHTML='<span class="highlight-container"><span class="highlight">Comments</span></span>';
-            newElement.appendChild(commentsTitleDiv);
-            // artalk
-            const commentsElement = document.createElement('div');
-            commentsElement.classList = 'comments-artalk';
-            newElement.appendChild(commentsElement);
+        const currentURL = window.location.href;
+
+        const regex = /^https?:\/\/[^\/]+\/posts\//;
+
+        // 检查当前URL是否匹配正则表达式
+        if (regex.test(currentURL)) {
+            if (!document.getElementById('comments')) {
+                const newElement = document.createElement('div');
+                newElement.id = 'comments';
+                newElement.classList = 'animated comments comments-block fadeIn';
+                // 在 .post-block 后面插入新元素
+                const postBlock = document.querySelector('.post-block');
+                postBlock
+                    .parentNode
+                    .insertBefore(newElement, postBlock.nextSibling);
+                // 标题
+                const commentsTitleDiv = document.createElement('div');
+                commentsTitleDiv.classList = 'comments-block-title';
+                commentsTitleDiv.innerHTML = '<span class="highlight-container"><span class="highlight">Comments</span></span>';
+                newElement.appendChild(commentsTitleDiv);
+                // artalk
+                const commentsElement = document.createElement('div');
+                commentsElement.classList = 'comments-artalk';
+                newElement.appendChild(commentsElement);
+            }
+            Artalk.init({el: '#comments>.comments-artalk', server: 'https://artalk.abyss.moe', site: 'Echo Of Rain'})
         }
-        Artalk.init({el: '#comments>.comments-artalk', server: 'https://artalk.abyss.moe', site: 'Echo Of Rain'})
     });
 </script>
