@@ -115,8 +115,6 @@ a, .back-to-top-cat, .fa-copy, button {
 
 // 文章样式
 .main-inner.post {
-  background: var(--content-bg-color);
-
   // 背景
   .post-block {
     background-image: linear-gradient(90deg, rgba(159, 219, 252, 0.15) 3%, transparent 0), linear-gradient(1turn, rgba(159, 219, 252, 0.15) 3%, transparent 0);
@@ -393,16 +391,18 @@ a, .back-to-top-cat, .fa-copy, button {
     padding: 15px 0 15px 15px;
     border-left: 5px solid $KOHBAI;
 
-    .post-copyright-bg {
+    .post-copyright-warp {
+      position: relative;
       height: 100%;
-      padding-left: 165px;
-      background-image: url('/images/priest.png');
-      background-size: contain;
-      background-repeat: no-repeat;
+      padding-left: 0;
       display: flex;
       flex-flow: column;
       justify-content: center;
       font-size: 1rem;
+
+      @media (min-width: 450px) {
+        padding-left: 165px;
+      }
 
       @media (min-width: 300px) {
         min-height: 165px;
@@ -410,6 +410,25 @@ a, .back-to-top-cat, .fa-copy, button {
 
       span {
         word-break: keep-all;
+      }
+
+      .post-copyright-bg {
+        position: absolute;
+        width: 165px;
+        height: 165px;
+        right: 0px;
+        top: 10%;
+        opacity: 0.15;
+        background-image: url('/images/priest.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        @media (min-width: 450px) {
+          right: unset;
+          left: 0;
+          top: 0;
+          opacity: 1;
+        }
       }
 
       .post-copyright-uta {
@@ -738,16 +757,77 @@ a, .back-to-top-cat, .fa-copy, button {
   transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// 减少动画等待时间
-.main {
-  .animated {
-    -webkit-animation-duration: 0.3s;
-    animation-duration: 0.3s;
+@media (max-width: 910px) {
+  .sidebar {
+    background: rgba(34, 34, 34, 0.95);
   }
 }
 
-@media (max-width: 991px) {
-  .sidebar {
-    background: rgba(34, 34, 34, 0.95);
+// 评论区样式
+#comments {
+  background-color: rgba(255, 255, 255, 0.95);
+  background-image: linear-gradient(90deg, rgba(159, 219, 252, 0.15) 3%, transparent 0), linear-gradient(1turn, rgba(159, 219, 252, 0.15) 3%, transparent 0);
+  background-size: 20px 20px;
+  background-position: 50%;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.06), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  margin-top: 20px;
+  padding: 40px 20px;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+
+  .atk-main-editor {
+    border-color: #e8e6e6;
+  }
+
+  .atk-textarea {
+    border-top: 1px solid #e8e6e6;
+  }
+
+  .atk-send-btn {
+    background-color: rgba($SHION, 0.8);
+  }
+
+  .atk-list-no-comment>span {
+    text-decoration: underline;
+    text-decoration-thickness: 0.4em;
+    text-decoration-color: rgba(209, 197, 230, 100%);
+    text-underline-offset: -0.2em;
+    text-decoration-skip-ink: none;
+  }
+
+  .comments-block-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    padding: 0 5px;
+    color: #333;
+    text-align: center;
+
+    ；, .highlight-container, .highlight {
+      position: relative;
+    }
+
+    .highlight-container {
+      padding: 8px 35px;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .highlight-container:before {
+      content: ' ';
+      display: block;
+      height: 90%;
+      width: 100%;
+      margin-left: -3px;
+      margin-right: -3px;
+      position: absolute;
+      background: rgba(255, 213, 0, 0.9);
+      transform: rotate(2deg);
+      top: -1px;
+      left: -1px;
+      border-radius: 20% 25% 20% 24%;
+      padding: 10px 3px 3px 10px;
+    }
   }
 }

@@ -567,11 +567,11 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: disqus | disqusjs | changyan | valine | livere | gitalk
-  active: disqus
+  active: #
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
-  lazyload: true
+  lazyload: false
   # Modify texts or order for any navs, here are some examples.
   nav:
     disqus:
@@ -582,7 +582,7 @@ comments:
 
 # Disqus
 disqus:
-  enable: true
+  enable: false
   shortname: echo-of-rain
   count: false
 
@@ -845,7 +845,7 @@ mermaid:
 # For more information: https://animate.style
 motion:
   enable: true
-  async: false
+  async: true
   transition:
     # All available transition variants: https://theme-next.js.org/animate/
     post_block: fadeIn

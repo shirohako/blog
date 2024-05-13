@@ -20,3 +20,25 @@
         });
     });
 </script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        if (!document.getElementById('comments')) {
+            const newElement = document.createElement('div');
+            newElement.id = 'comments';
+            newElement.classList = 'animated comments comments-block fadeIn';
+            // 在 .post-block 后面插入新元素
+            const postBlock = document.querySelector('.post-block');
+            postBlock.parentNode.insertBefore(newElement, postBlock.nextSibling);
+            // 标题
+            const commentsTitleDiv = document.createElement('div');
+            commentsTitleDiv.classList = 'comments-block-title';
+            commentsTitleDiv.innerHTML='<span class="highlight-container"><span class="highlight">Comments</span></span>';
+            newElement.appendChild(commentsTitleDiv);
+            // artalk
+            const commentsElement = document.createElement('div');
+            commentsElement.classList = 'comments-artalk';
+            newElement.appendChild(commentsElement);
+        }
+        Artalk.init({el: '#comments>.comments-artalk', server: 'https://artalk.abyss.moe', site: 'Echo Of Rain'})
+    });
+</script>
