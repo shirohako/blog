@@ -23,7 +23,7 @@
     });
 </script>
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
+    function addCommentsElement() {
         const currentURL = window.location.href;
 
         const regex = /^https?:\/\/[^\/]+\/posts\//;
@@ -51,5 +51,9 @@
             }
             Artalk.init({el: '#comments>.comments-artalk', server: 'https://artalk.abyss.moe', site: 'Echo Of Rain'})
         }
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+        addCommentsElement()
+        document.addEventListener('pjax:success', addCommentsElement);
     });
 </script>
