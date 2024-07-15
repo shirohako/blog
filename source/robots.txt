@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /$
+Allow: /atom.xml
 Allow: /posts
 Disallow: /
