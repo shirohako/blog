@@ -610,7 +610,7 @@ Eris
 第六弾では、「Goodbye [Eris's Kinetic Emotion mix]」を作らせて頂きました。初めてこの曲を聴いた時から、壮大な景色が見えていたので、そのままVivienneさんのヴォーカルに導かれるように、ドロップを作った記憶があります。激しくも切ないような、そんな音色をイメージしたので、ドロップではメロディにStringsをフィーチャーしております。Goodbyeの意味がポジティブになるような、そんな風に聴いて頂けたら嬉しいなと思います。
 </p>
 <p class="note-teanslated-text" lang="zh">
-作为第六弹，我提供了「Gooodbye [Eris's Kinetic Emotion mix]」这一作品。记得第一次听到这首曲子时，眼前浮现出了宏伟的景致，然后就在Vivienne桑的歌声引导下完成了创作。
+作为第六弹，我提供了「Goodbye [Eris's Kinetic Emotion mix]」这一作品。记得第一次听到这首曲子时，眼前浮现出了宏伟的景致，然后就在Vivienne桑的歌声引导下完成了创作。
 因为想象的是富有激情却又含着伤感的音色，高潮部分就聚焦在了弦乐组上。希望大家能够从Goodbye当中品味到积极乐观的情绪。
 </p>
 
@@ -1404,7 +1404,7 @@ Eris
 </p>
 <p class="note-teanslated-text" lang="zh">
 第九弹，同时也是最后的一张专辑，所以就以回归原点为主题，特意从FELT的第一张专辑里选了一曲。
-在「Sky Gate [Eris's Appreciation mix]」当中，重新使用了象征着Eris Remix起点的Four on the floor，一边回顾制作「LittleNove」的经历，一边试着做出激扬又美丽的高潮段落。
+在「Sky Gate [Eris's Appreciation mix]」当中，重新使用了象征着Eris Remix起点的Four on the floor，一边回顾制作「LittleNova」的经历，一边试着做出激扬又美丽的高潮段落。
 想到是最后一次，心里不禁非常失落，为最后的改编应该做成什么样而烦恼了很久，但最终上交成品的时候，还是觉得回归原点是正确的决定。标题也是很直白的「感谢mix」。希望大家听得开心！
 </p>
 
