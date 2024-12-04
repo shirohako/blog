@@ -25,7 +25,7 @@ mailcow: dockerized - 🐮 + 🐋 = 💕
 ## 事前准备
 
 `Mailcow`还是很吃配置的, 在部署之前, 我们先确认服务器是否符合要求
-参考文档：https://docs.mailcow.email/prerequisite/
+参考文档：https://docs.mailcow.email/getstarted/prerequisite-system/
 
 ### Minimum System Resources
 
