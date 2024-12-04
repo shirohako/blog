@@ -179,7 +179,7 @@ Ctrl+F 搜索你的光驱型号机型，比如我的`hp BD CMB UJ160`是+103
 
 请在freedb填写下邮箱
 
-![](https://ae01.alicdn.com/kf/Ua36348dff8a847ffa2fbc274216157a7X.jpg)
+![](https://i.psray.net/i/2024/07/30/66a7dcf46b556.jpg)
 
 如果只抓取`无压缩`的`WAV波形`档案，压缩选项可以忽略
 

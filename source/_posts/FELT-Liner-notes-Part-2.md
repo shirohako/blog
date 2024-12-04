@@ -3,7 +3,7 @@ title: FELT Liner Notes 中文翻译 (Part II)
 date: 2024-05-05 20:02:00
 tags: [FELT]
 categories: [Translate]
-description: 东方同人音乐社团 FELT Music 发行的单行本 Liner Notes 的日本文本以及对应的简体中文译文。
+description: 东方同人音乐社团 FELT Music 发行的单行本 Liner Notes。日本文本以及对应的简体中文译文。FELT-011 ~ FELT-020 部分。
 ---
 
 <div class="license-block">
@@ -1307,7 +1307,7 @@ Renko
 最後の「Sorry for all from before.Thank you for the memories and all that you've done.（今までごめんね／思い出と今までありがとう）」などは、亡くなった人に伝えたいことだと思うんです。そして、寂しくても、元気でやっているということを伝えたいのです。失うこと、別れることは辛いことであり、悲しみ長引くものです。多くの方から、この曲が心に響いた、泣いたというコメントをいただいています。泣かせてしまってごめんなさい。でも、多くの方とつながったこともうれしいです。ああ。やばい。涙目になってきた。
 </p>
 <p class="note-teanslated-text" lang="zh">
-「Gooodbye」
+「Goodbye」
 在听完来到手中的曲子之后，我立刻就明白了自己该写些什么，于是不到一天就完成了。开头部分是在回忆曾经站在自己身边的人，最后则是坦然面对对方已经不在世上的事实。虽然尽量描述得比较晦涩，但考虑到歌词的延续性，这样的内容确实十分合理。
 从没跟任何人说过的是，写歌词的时候我心里想的是自己在高中最后那年突然逝世的父亲。明明是自己写的歌词，听到的时候还是流下了眼泪。录制这首歌的vocal guide很不容易，但创作此曲于我而言是一件幸事。
 最后的「Sorry for all from before.Thank you for the memories and all that you've done.（为过去的一切致歉，感谢你留下的过去，以及回忆）」想必就是我想要传达给逝者的话吧。也想让对方明白，虽然觉得寂寞，但我过得很好。
