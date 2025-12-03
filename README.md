@@ -7,9 +7,9 @@
 ## Installation
 
 ```
-npm install -g hexo-cli
+npm install -g hexo-cli pnpm
 git clone --recurse-submodules https://github.com/shirohako/blog 
-cd blog && npm i
+cd blog && pnpm i
 ```
 
 ## Configuration
