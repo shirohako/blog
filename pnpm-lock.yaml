@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       hexo:
-        specifier: ^8.0.0
+        specifier: ^8.1.1
         version: 8.1.1(chokidar@3.6.0)
       hexo-generator-archive:
         specifier: ^2.0.0
@@ -30,7 +30,7 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0
       hexo-renderer-marked:
-        specifier: ^7.0.0
+        specifier: ^7.0.1
         version: 7.0.1
       hexo-renderer-stylus:
         specifier: ^3.0.1
