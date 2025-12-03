@@ -701,8 +701,8 @@ matomo:
 # See: https://umami.is/
 umami:
   enable: true
-  script_url:  https://akari.abyss.moe/hotaru.js
-  website_id:  202e2328-52a9-4056-9f1b-2441bd16039f
+  script_url:  https://akari.abyss.moe/script.js
+  website_id:  5c5e97ce-52e5-413f-a93b-26b6e5526f8f
 
 # Plausible Analytics
 # See: https://plausible.io/
