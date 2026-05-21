@@ -34,3 +34,10 @@ hexo s
 ```
 git submodule update --remote themes/next
 ```
+
+## Update
+
+```
+git pull --recurse-submodules
+git submodule update --init --recursive
+```
