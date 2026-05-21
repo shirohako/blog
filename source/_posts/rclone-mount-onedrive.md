@@ -285,7 +285,7 @@ y/n>
 最后是确认步骤，到步骤你基本已经成功了，`y`,`y`,`q`即可
 
 
-## 测试和自动挂载
+## 测试
 
 ```
 rclone lsd onedrive:
@@ -302,6 +302,28 @@ sudo mkdir -p /mnt/onedrive
 sudo chown -R $(whoami):$(whoami) /mnt/onedrive
 ```
 
+## 同步文件
+
+我这里用途是定时备份，推荐直接使用`rclone copy`
+
+```
+rclone copy /backup onedrive:/ServerBackup
+
+# 把 /backup 里的文件复制到 OneDrive 的 /ServerBackup
+# 远端已有且未变化的文件会跳过
+# 远端多出来的文件不会删除
+
+
+rclone copy /root/backup.sql onedrive:/ServerBackup
+
+# 复制单个文件
+```
+
+## 挂载
+
+如果只是定时备份，使用 `copy` 即可，这里提一下挂载。这种方法可以让读立刻同步远程/本地，适合读写用途。
+
+
 ```
 sudo nano /etc/systemd/system/rclone-onedrive.service
 
@@ -317,21 +339,20 @@ After=network-online.target
 [Service]
 Type=simple
 User=YOUR_USERNAME
-ExecStart=/usr/bin/rclone mount onedrive:/ /mnt/onedrive \
-    --config=/home/YOUR_USERNAME/.config/rclone/rclone.conf \
-    --vfs-cache-mode=writes \
-    --vfs-cache-max-size=2G \
-    --vfs-cache-max-age=6h \
-    --dir-cache-time=12h \
-    --poll-interval=0 \
-    --buffer-size=4M \
-    --vfs-read-ahead=8M \
-    --low-level-retries=5 \
-    --retries=3 \
-    --umask=002 \
+ExecStart=/usr/bin/rclone mount onedrive: /mnt/OneDrive \
+    --config=/YOUR_USERNAME/.config/rclone/rclone.conf \
     --allow-other \
-    --log-level=INFO \
-    --log-file=/var/log/rclone-onedrive.log
+    --vfs-cache-mode full \
+    --cache-dir=/var/cache/rclone \
+    --buffer-size 64M \
+    --dir-cache-time 10m \
+    --poll-interval 1m \
+    --vfs-cache-max-age 72h \
+    --vfs-cache-max-size 10G \
+    --transfers 4 \
+    --rc --rc-addr 127.0.0.1:5572 --rc-no-auth \
+    --log-level INFO \
+    --log-file /var/log/rclone-onedrive.log
 ExecStop=/bin/fusermount -uz /mnt/onedrive
 Restart=on-failure
 RestartSec=10
